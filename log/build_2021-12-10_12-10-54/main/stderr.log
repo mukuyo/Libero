@@ -1,0 +1,5 @@
+  File "/home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/python_programs/main.py", line 238
+    if msg.
+          ^
+SyntaxError: invalid syntax
+

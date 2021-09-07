@@ -8,8 +8,8 @@ import math
 import time
 class Camera:
     def __init__(self):
-        self.LOW_COLOR = np.array([0, 59, 171])
-        self.HIGH_COLOR = np.array([7, 206, 255])
+        self.LOW_COLOR = np.array([0, 109, 118])
+        self.HIGH_COLOR = np.array([10, 198, 216])
         self.wide = 0
         self.AREA_RATIO_THRESHOLD = 0.005
         self.appear = False
@@ -47,7 +47,10 @@ class Camera:
             #cv2.imshow('frame',frame)
           
             # キーボード入力待ち
+            #cv2.imshow('img_final', img_final)
+            #cv2.waitKey(0)
             key = cv2.waitKey(1) & 0xFF
+            #cv2.destroyAllWindows()
 
             # qが押された場合は終了する
             #if key == ord('q'):
