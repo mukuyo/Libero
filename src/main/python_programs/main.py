@@ -28,8 +28,8 @@ GPIO.setwarnings(False)
 class RealSender(Node):
     def __init__(self):
         super().__init__('receiver')
-        self.LOW_COLOR = np.array([0, 102, 163])
-        self.HIGH_COLOR = np.array([179, 174, 255])
+        self.LOW_COLOR = np.array([0, 172, 122])
+        self.HIGH_COLOR = np.array([96, 255, 255])
         self.wide = 0
         self.AREA_RATIO_THRESHOLD = 0.005
         self.appear = False
@@ -407,7 +407,7 @@ class RealSender(Node):
                 self.distance = data
                 self.degree_min = degree_one * count + 180
 
-        self.target_distance = self.target_distance*100 - 40
+        self.target_distance = self.target_distance*100 - 45
         self.distance = self.distance*100 - 50
         distance_temp = self.distance 
         
@@ -433,7 +433,7 @@ class RealSender(Node):
         #if self.camera.appear == True and self.target_distance < 10:
         #    self.camera.appear = False
         
-        if self.distance < 5 and not(self.touch_count) == 3 and self.first_imu == False:
+        if self.distance < 7 and not(self.touch_count) == 3 and self.first_imu == False:
         #if self.distance < 5:
             if self.appear == True:
                 self.avoid_flag = False
@@ -460,18 +460,18 @@ class RealSender(Node):
         self.imu = False
         self.avoid_flag = True
         if abs(self.degree_min) < 90:
-            self.left_power = abs(70 - abs(self.degree_min))
-            if abs(self.left_power) > 20:
-               self.left_power = 0.0
-            elif abs(self.left_power) < 20:
-               self.left_power = 20
-            self.right_power = 60
-        else:
-            self.left_power = 60
-            #self.right_power = 20
-            self.right_power = abs(abs(self.degree_min) - 110)
+            self.right_power = abs(70 - abs(self.degree_min))
             if abs(self.right_power) > 20:
-                self.right_power = 0.0 
+               self.right_power = 0.0
+            elif abs(self.right_power) < 20:
+               self.right_power = 20
+            self.left_power = 60
+        else:
+            self.right_power = 60
+            #self.right_power = 20
+            self.left_power = abs(abs(self.degree_min) - 110)
+            if abs(self.left_power) > 20:
+                self.left_power = 0.0 
 
     def pc_callback(self, msg):
         print("as")

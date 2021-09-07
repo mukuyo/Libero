@@ -9,8 +9,8 @@ import time
 class Camera(RealSender):
     def __init__(self):
         super().__init__()
-        self.LOW_COLOR = np.array([0, 109, 118])
-        self.HIGH_COLOR = np.array([10, 198, 216])
+        self.LOW_COLOR = np.array([0, 172, 122])
+        self.HIGH_COLOR = np.array([96, 255, 255])
         self.wide = 0
         self.AREA_RATIO_THRESHOLD = 0.005
         self.appear = False

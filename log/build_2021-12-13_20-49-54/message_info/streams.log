@@ -1,0 +1,298 @@
+[1.061s] Invoking command in '/home/ubuntu/ws/Libero/build/message_info': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ws/Libero/install/main:/home/ubuntu/ws/SSLRasp/install/rasp:/opt/ros/foxy /usr/bin/cmake /home/ubuntu/ws/Libero/src/message_info -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ws/Libero/install/message_info
+[2.103s] -- The C compiler identification is GNU 9.3.0
+[2.889s] -- The CXX compiler identification is GNU 9.3.0
+[2.921s] -- Check for working C compiler: /usr/bin/cc
+[3.263s] -- Check for working C compiler: /usr/bin/cc -- works
+[3.269s] -- Detecting C compiler ABI info
+[3.598s] -- Detecting C compiler ABI info - done
+[3.643s] -- Detecting C compile features
+[3.645s] -- Detecting C compile features - done
+[3.658s] -- Check for working CXX compiler: /usr/bin/c++
+[4.010s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[4.014s] -- Detecting CXX compiler ABI info
+[4.382s] -- Detecting CXX compiler ABI info - done
+[4.425s] -- Detecting CXX compile features
+[4.427s] -- Detecting CXX compile features - done
+[4.474s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[4.679s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[4.679s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.918s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[5.963s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.061s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[7.105s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[7.393s] -- Found FastRTPS: /opt/ros/foxy/include  
+[8.166s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.387s] -- Found builtin_interfaces: 1.0.0 (/opt/ros/foxy/share/builtin_interfaces/cmake)
+[8.503s] -- Found std_msgs: 2.0.4 (/opt/ros/foxy/share/std_msgs/cmake)
+[8.610s] -- Found sensor_msgs: 2.0.4 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[9.152s] -- OpenSSL Version: 1.1.1f /usr/include /usr/lib/aarch64-linux-gnu/libssl.so;/usr/lib/aarch64-linux-gnu/libcrypto.so
+[9.288s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[10.363s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[12.371s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[13.102s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[13.249s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[13.277s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[13.442s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[13.442s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[13.443s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[13.443s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so
+[13.570s] -- Found PythonExtra: .so  
+[14.065s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[14.377s] -- Added test 'copyright' to check source files copyright and LICENSE
+[14.393s] -- Added test 'lint_cmake' to check CMake code style
+[14.402s] -- Added test 'xmllint' to check XML markup files
+[14.444s] -- Configuring done
+[14.810s] -- Generating done
+[14.824s] -- Build files have been written to: /home/ubuntu/ws/Libero/build/message_info
+[14.861s] Invoked command in '/home/ubuntu/ws/Libero/build/message_info' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ws/Libero/install/main:/home/ubuntu/ws/SSLRasp/install/rasp:/opt/ros/foxy /usr/bin/cmake /home/ubuntu/ws/Libero/src/message_info -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ws/Libero/install/message_info
+[14.872s] Invoking command in '/home/ubuntu/ws/Libero/build/message_info': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ws/Libero/install/main:/home/ubuntu/ws/SSLRasp/install/rasp:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ws/Libero/build/message_info -- -j4 -l4
+[15.069s] [35m[1mScanning dependencies of target message_info__cpp[0m
+[15.074s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[15.126s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[17.367s] [  3%] Built target message_info__cpp
+[17.425s] [35m[1mScanning dependencies of target message_info__rosidl_generator_c[0m
+[17.429s] [  5%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[17.431s] [  7%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[17.434s] [  9%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[17.537s] [ 10%] [32mBuilding C object CMakeFiles/message_info__rosidl_generator_c.dir/rosidl_generator_c/message_info/msg/detail/robot_command__functions.c.o[0m
+[17.827s] [ 12%] [32mBuilding C object CMakeFiles/message_info__rosidl_generator_c.dir/rosidl_generator_c/message_info/msg/detail/robot_commands__functions.c.o[0m
+[18.056s] [ 14%] [32mBuilding C object CMakeFiles/message_info__rosidl_generator_c.dir/rosidl_generator_c/message_info/msg/detail/real_commands__functions.c.o[0m
+[18.354s] [ 16%] [32mBuilding C object CMakeFiles/message_info__rosidl_generator_c.dir/rosidl_generator_c/message_info/msg/detail/slave__functions.c.o[0m
+[18.554s] [ 18%] [32m[1mLinking C shared library libmessage_info__rosidl_generator_c.so[0m
+[18.805s] [ 18%] Built target message_info__rosidl_generator_c
+[18.867s] [ 20%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[19.350s] [35m[1mScanning dependencies of target message_info__rosidl_typesupport_cpp[0m
+[19.458s] [ 21%] [32mBuilding CXX object CMakeFiles/message_info__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/message_info/msg/robot_command__type_support.cpp.o[0m
+[19.893s] [35m[1mScanning dependencies of target message_info__rosidl_typesupport_introspection_cpp[0m
+[19.959s] [35m[1mScanning dependencies of target message_info__rosidl_typesupport_fastrtps_cpp[0m
+[19.989s] [ 23%] [32mBuilding CXX object CMakeFiles/message_info__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/message_info/msg/detail/robot_command__type_support.cpp.o[0m
+[20.085s] [ 25%] [32mBuilding CXX object CMakeFiles/message_info__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/message_info/msg/detail/dds_fastrtps/robot_command__type_support.cpp.o[0m
+[21.359s] [ 27%] [32mBuilding CXX object CMakeFiles/message_info__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/message_info/msg/robot_commands__type_support.cpp.o[0m
+[21.409s] [35m[1mScanning dependencies of target message_info__rosidl_typesupport_introspection_c[0m
+[21.509s] [ 29%] [32mBuilding C object CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/message_info/msg/detail/robot_command__type_support.c.o[0m
+[21.672s] [ 30%] [32mBuilding CXX object CMakeFiles/message_info__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/message_info/msg/detail/robot_commands__type_support.cpp.o[0m
+[21.703s] [ 32%] [32mBuilding C object CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/message_info/msg/detail/robot_commands__type_support.c.o[0m
+[21.903s] [ 34%] [32mBuilding C object CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/message_info/msg/detail/real_commands__type_support.c.o[0m
+[22.100s] [ 36%] [32mBuilding C object CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/message_info/msg/detail/slave__type_support.c.o[0m
+[22.353s] [ 38%] [32m[1mLinking C shared library libmessage_info__rosidl_typesupport_introspection_c.so[0m
+[22.645s] [ 38%] Built target message_info__rosidl_typesupport_introspection_c
+[22.701s] [ 40%] [32mBuilding CXX object CMakeFiles/message_info__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/message_info/msg/detail/dds_fastrtps/robot_commands__type_support.cpp.o[0m
+[22.915s] [ 41%] [32mBuilding CXX object CMakeFiles/message_info__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/message_info/msg/detail/real_commands__type_support.cpp.o[0m
+[23.218s] [ 43%] [32mBuilding CXX object CMakeFiles/message_info__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/message_info/msg/real_commands__type_support.cpp.o[0m
+[23.562s] [ 45%] [32mBuilding CXX object CMakeFiles/message_info__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/message_info/msg/slave__type_support.cpp.o[0m
+[24.558s] [ 47%] [32mBuilding CXX object CMakeFiles/message_info__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/message_info/msg/detail/slave__type_support.cpp.o[0m
+[25.027s] [ 49%] [32mBuilding CXX object CMakeFiles/message_info__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/message_info/msg/detail/dds_fastrtps/real_commands__type_support.cpp.o[0m
+[25.241s] [ 50%] [32m[1mLinking CXX shared library libmessage_info__rosidl_typesupport_cpp.so[0m
+[25.263s] [ 52%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[25.473s] [ 52%] Built target message_info__rosidl_typesupport_cpp
+[25.577s] [ 54%] [32mBuilding CXX object CMakeFiles/message_info__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/message_info/msg/detail/dds_fastrtps/slave__type_support.cpp.o[0m
+[26.298s] [ 56%] [32m[1mLinking CXX shared library libmessage_info__rosidl_typesupport_introspection_cpp.so[0m
+[26.693s] [ 56%] Built target message_info__rosidl_typesupport_introspection_cpp
+[27.262s] [35m[1mScanning dependencies of target message_info__rosidl_typesupport_c[0m
+[27.349s] [ 58%] [32mBuilding CXX object CMakeFiles/message_info__rosidl_typesupport_c.dir/rosidl_typesupport_c/message_info/msg/robot_command__type_support.cpp.o[0m
+[27.357s] [ 60%] [32mBuilding CXX object CMakeFiles/message_info__rosidl_typesupport_c.dir/rosidl_typesupport_c/message_info/msg/robot_commands__type_support.cpp.o[0m
+[27.533s] [ 61%] [32mBuilding CXX object CMakeFiles/message_info__rosidl_typesupport_c.dir/rosidl_typesupport_c/message_info/msg/real_commands__type_support.cpp.o[0m
+[27.554s] [ 63%] [32mBuilding CXX object CMakeFiles/message_info__rosidl_typesupport_c.dir/rosidl_typesupport_c/message_info/msg/slave__type_support.cpp.o[0m
+[27.739s] [ 65%] [32m[1mLinking CXX shared library libmessage_info__rosidl_typesupport_c.so[0m
+[27.935s] [ 65%] Built target message_info__rosidl_typesupport_c
+[28.117s] [ 67%] [32m[1mLinking CXX shared library libmessage_info__rosidl_typesupport_fastrtps_cpp.so[0m
+[28.519s] [ 67%] Built target message_info__rosidl_typesupport_fastrtps_cpp
+[28.577s] [ 69%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[30.343s] [35m[1mScanning dependencies of target message_info__rosidl_typesupport_fastrtps_c[0m
+[30.461s] [ 70%] [32mBuilding CXX object CMakeFiles/message_info__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/message_info/msg/detail/robot_command__type_support_c.cpp.o[0m
+[30.467s] [ 72%] [32mBuilding CXX object CMakeFiles/message_info__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/message_info/msg/detail/robot_commands__type_support_c.cpp.o[0m
+[30.474s] [ 74%] [32mBuilding CXX object CMakeFiles/message_info__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/message_info/msg/detail/real_commands__type_support_c.cpp.o[0m
+[30.495s] [ 76%] [32mBuilding CXX object CMakeFiles/message_info__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/message_info/msg/detail/slave__type_support_c.cpp.o[0m
+[32.751s] [ 78%] [32m[1mLinking CXX shared library libmessage_info__rosidl_typesupport_fastrtps_c.so[0m
+[33.145s] [ 78%] Built target message_info__rosidl_typesupport_fastrtps_c
+[33.193s] [35m[1mScanning dependencies of target message_info[0m
+[33.249s] [ 78%] Built target message_info
+[33.299s] [35m[1mScanning dependencies of target message_info__py[0m
+[33.356s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[36.715s] [ 80%] Built target message_info__py
+[36.765s] [35m[1mScanning dependencies of target message_info__python[0m
+[36.964s] [ 81%] [32mBuilding C object CMakeFiles/message_info__python.dir/rosidl_generator_py/message_info/msg/_robot_command_s.c.o[0m
+[36.978s] [ 83%] [32mBuilding C object CMakeFiles/message_info__python.dir/rosidl_generator_py/message_info/msg/_real_commands_s.c.o[0m
+[36.980s] [ 85%] [32mBuilding C object CMakeFiles/message_info__python.dir/rosidl_generator_py/message_info/msg/_robot_commands_s.c.o[0m
+[37.005s] [ 87%] [32mBuilding C object CMakeFiles/message_info__python.dir/rosidl_generator_py/message_info/msg/_slave_s.c.o[0m
+[37.557s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/message_info/libmessage_info__python.so[0m
+[37.799s] [ 89%] Built target message_info__python
+[37.851s] [35m[1mScanning dependencies of target message_info__rosidl_typesupport_c__pyext[0m
+[37.853s] [35m[1mScanning dependencies of target message_info__rosidl_typesupport_introspection_c__pyext[0m
+[37.854s] [35m[1mScanning dependencies of target message_info__rosidl_typesupport_fastrtps_c__pyext[0m
+[37.948s] [ 90%] [32mBuilding C object CMakeFiles/message_info__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/message_info/_message_info_s.ep.rosidl_typesupport_c.c.o[0m
+[37.989s] [ 92%] [32mBuilding C object CMakeFiles/message_info__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/message_info/_message_info_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[37.992s] [ 94%] [32mBuilding C object CMakeFiles/message_info__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/message_info/_message_info_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[38.420s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/message_info/message_info_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so[0m
+[38.460s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/message_info/message_info_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so[0m
+[38.491s] [100%] [32m[1mLinking CXX shared library rosidl_generator_py/message_info/message_info_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so[0m
+[38.717s] [100%] Built target message_info__rosidl_typesupport_c__pyext
+[38.754s] [100%] Built target message_info__rosidl_typesupport_introspection_c__pyext
+[38.907s] [100%] Built target message_info__rosidl_typesupport_fastrtps_c__pyext
+[38.956s] Invoked command in '/home/ubuntu/ws/Libero/build/message_info' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ws/Libero/install/main:/home/ubuntu/ws/SSLRasp/install/rasp:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ws/Libero/build/message_info -- -j4 -l4
+[39.771s] Invoking command in '/home/ubuntu/ws/Libero/build/message_info': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ws/Libero/install/main:/home/ubuntu/ws/SSLRasp/install/rasp:/opt/ros/foxy /usr/bin/cmake --install /home/ubuntu/ws/Libero/build/message_info
+[39.810s] -- Install configuration: ""
+[39.810s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/ament_index/resource_index/rosidl_interfaces/message_info
+[39.812s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info
+[39.812s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg
+[39.813s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/robot_command.h
+[39.814s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail
+[39.814s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_commands__functions.c
+[39.815s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_command__functions.h
+[39.816s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/slave__functions.h
+[39.817s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/real_commands__type_support.h
+[39.818s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_command__functions.c
+[39.819s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_command__type_support.h
+[39.820s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/slave__functions.c
+[39.821s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/real_commands__struct.h
+[39.822s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_commands__functions.h
+[39.823s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/slave__type_support.h
+[39.824s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_commands__type_support.h
+[39.825s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_command__struct.h
+[39.826s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/real_commands__functions.c
+[39.827s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_commands__struct.h
+[39.828s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/real_commands__functions.h
+[39.829s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/slave__struct.h
+[39.830s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/rosidl_generator_c__visibility_control.h
+[39.831s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/slave.h
+[39.831s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/real_commands.h
+[39.832s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/robot_commands.h
+[39.834s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/environment/library_path.sh
+[39.835s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/environment/library_path.dsv
+[39.836s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/lib/libmessage_info__rosidl_generator_c.so
+[39.839s] -- Set runtime path of "/home/ubuntu/ws/Libero/install/message_info/lib/libmessage_info__rosidl_generator_c.so" to ""
+[39.839s] -- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info
+[39.840s] -- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg
+[39.840s] -- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail
+[39.840s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/real_commands__rosidl_typesupport_fastrtps_c.h
+[39.841s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_command__rosidl_typesupport_fastrtps_c.h
+[39.842s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/slave__rosidl_typesupport_fastrtps_c.h
+[39.843s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_commands__rosidl_typesupport_fastrtps_c.h
+[39.845s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[39.846s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/lib/libmessage_info__rosidl_typesupport_fastrtps_c.so
+[39.849s] -- Set runtime path of "/home/ubuntu/ws/Libero/install/message_info/lib/libmessage_info__rosidl_typesupport_fastrtps_c.so" to ""
+[39.849s] -- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info
+[39.849s] -- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg
+[39.850s] -- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail
+[39.850s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/real_commands__rosidl_typesupport_fastrtps_cpp.hpp
+[39.851s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/dds_fastrtps
+[39.852s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_command__rosidl_typesupport_fastrtps_cpp.hpp
+[39.853s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_commands__rosidl_typesupport_fastrtps_cpp.hpp
+[39.854s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/slave__rosidl_typesupport_fastrtps_cpp.hpp
+[39.855s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[39.856s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/lib/libmessage_info__rosidl_typesupport_fastrtps_cpp.so
+[39.859s] -- Set runtime path of "/home/ubuntu/ws/Libero/install/message_info/lib/libmessage_info__rosidl_typesupport_fastrtps_cpp.so" to ""
+[39.859s] -- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info
+[39.860s] -- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg
+[39.860s] -- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail
+[39.861s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_command__rosidl_typesupport_introspection_c.h
+[39.862s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_command__type_support.c
+[39.863s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_commands__type_support.c
+[39.864s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/real_commands__rosidl_typesupport_introspection_c.h
+[39.865s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/slave__rosidl_typesupport_introspection_c.h
+[39.866s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/real_commands__type_support.c
+[39.867s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/slave__type_support.c
+[39.868s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_commands__rosidl_typesupport_introspection_c.h
+[39.869s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[39.871s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/lib/libmessage_info__rosidl_typesupport_introspection_c.so
+[39.873s] -- Set runtime path of "/home/ubuntu/ws/Libero/install/message_info/lib/libmessage_info__rosidl_typesupport_introspection_c.so" to ""
+[39.874s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/lib/libmessage_info__rosidl_typesupport_c.so
+[39.876s] -- Set runtime path of "/home/ubuntu/ws/Libero/install/message_info/lib/libmessage_info__rosidl_typesupport_c.so" to ""
+[39.876s] -- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info
+[39.877s] -- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg
+[39.877s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/real_commands.hpp
+[39.878s] -- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail
+[39.878s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_command__struct.hpp
+[39.879s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/slave__struct.hpp
+[39.880s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/slave__traits.hpp
+[39.881s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_commands__traits.hpp
+[39.882s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_command__traits.hpp
+[39.883s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_commands__struct.hpp
+[39.884s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/real_commands__traits.hpp
+[39.885s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/slave__builder.hpp
+[39.886s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_command__builder.hpp
+[39.887s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/real_commands__builder.hpp
+[39.888s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_commands__builder.hpp
+[39.889s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/real_commands__struct.hpp
+[39.890s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/robot_commands.hpp
+[39.891s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/robot_command.hpp
+[39.891s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/slave.hpp
+[39.893s] -- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info
+[39.893s] -- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg
+[39.893s] -- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail
+[39.894s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_command__rosidl_typesupport_introspection_cpp.hpp
+[39.895s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/real_commands__type_support.cpp
+[39.896s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/slave__rosidl_typesupport_introspection_cpp.hpp
+[39.897s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_commands__rosidl_typesupport_introspection_cpp.hpp
+[39.898s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/slave__type_support.cpp
+[39.899s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/real_commands__rosidl_typesupport_introspection_cpp.hpp
+[39.900s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_commands__type_support.cpp
+[39.901s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_command__type_support.cpp
+[39.903s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/lib/libmessage_info__rosidl_typesupport_introspection_cpp.so
+[39.906s] -- Set runtime path of "/home/ubuntu/ws/Libero/install/message_info/lib/libmessage_info__rosidl_typesupport_introspection_cpp.so" to ""
+[39.906s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/lib/libmessage_info__rosidl_typesupport_cpp.so
+[39.908s] -- Set runtime path of "/home/ubuntu/ws/Libero/install/message_info/lib/libmessage_info__rosidl_typesupport_cpp.so" to ""
+[39.909s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/environment/pythonpath.sh
+[39.910s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/environment/pythonpath.dsv
+[39.912s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages/message_info/__init__.py
+[40.071s] Compiling '/home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages/message_info/__init__.py'...
+[40.094s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages/message_info/msg
+[40.094s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages/message_info/msg/_robot_commands.py
+[40.095s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages/message_info/msg/_robot_command.py
+[40.096s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages/message_info/msg/_slave.py
+[40.097s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages/message_info/msg/__init__.py
+[40.098s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages/message_info/msg/_robot_commands_s.c
+[40.099s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages/message_info/msg/_slave_s.c
+[40.100s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages/message_info/msg/_real_commands_s.c
+[40.101s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages/message_info/msg/_real_commands.py
+[40.102s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages/message_info/msg/_robot_command_s.c
+[40.104s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages/message_info/message_info_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[40.107s] -- Set runtime path of "/home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages/message_info/message_info_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so" to ""
+[40.109s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages/message_info/message_info_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[40.112s] -- Set runtime path of "/home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages/message_info/message_info_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so" to ""
+[40.113s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages/message_info/message_info_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[40.116s] -- Set runtime path of "/home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages/message_info/message_info_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so" to ""
+[40.116s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/lib/libmessage_info__python.so
+[40.119s] -- Set runtime path of "/home/ubuntu/ws/Libero/install/message_info/lib/libmessage_info__python.so" to ""
+[40.119s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/msg/RobotCommand.idl
+[40.121s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/msg/RobotCommands.idl
+[40.122s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/msg/RealCommands.idl
+[40.123s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/msg/Slave.idl
+[40.124s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/msg/RobotCommand.msg
+[40.125s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/msg/RobotCommands.msg
+[40.126s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/msg/RealCommands.msg
+[40.127s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/msg/Slave.msg
+[40.129s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/ament_index/resource_index/package_run_dependencies/message_info
+[40.130s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/ament_index/resource_index/parent_prefix_path/message_info
+[40.131s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/environment/ament_prefix_path.sh
+[40.132s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/environment/ament_prefix_path.dsv
+[40.134s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/environment/path.sh
+[40.135s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/environment/path.dsv
+[40.136s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/local_setup.bash
+[40.137s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/local_setup.sh
+[40.138s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/local_setup.zsh
+[40.139s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/local_setup.dsv
+[40.140s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/package.dsv
+[40.142s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/ament_index/resource_index/packages/message_info
+[40.143s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/message_info__rosidl_generator_cExport.cmake
+[40.145s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/message_info__rosidl_generator_cExport-noconfig.cmake
+[40.146s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/message_info__rosidl_typesupport_introspection_cExport.cmake
+[40.147s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/message_info__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[40.149s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/message_info__rosidl_typesupport_cExport.cmake
+[40.150s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/message_info__rosidl_typesupport_cExport-noconfig.cmake
+[40.152s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/message_info__rosidl_generator_cppExport.cmake
+[40.153s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/message_info__rosidl_typesupport_introspection_cppExport.cmake
+[40.155s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/message_info__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[40.156s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/message_info__rosidl_typesupport_cppExport.cmake
+[40.158s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/message_info__rosidl_typesupport_cppExport-noconfig.cmake
+[40.159s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/rosidl_cmake-extras.cmake
+[40.160s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/ament_cmake_export_dependencies-extras.cmake
+[40.161s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/ament_cmake_export_libraries-extras.cmake
+[40.162s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/ament_cmake_export_targets-extras.cmake
+[40.164s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/ament_cmake_export_include_directories-extras.cmake
+[40.165s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[40.166s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[40.167s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/message_infoConfig.cmake
+[40.168s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/message_infoConfig-version.cmake
+[40.169s] -- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/package.xml
+[40.181s] Invoked command in '/home/ubuntu/ws/Libero/build/message_info' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ws/Libero/install/main:/home/ubuntu/ws/SSLRasp/install/rasp:/opt/ros/foxy /usr/bin/cmake --install /home/ubuntu/ws/Libero/build/message_info

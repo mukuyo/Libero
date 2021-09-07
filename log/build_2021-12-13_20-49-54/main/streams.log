@@ -1,0 +1,47 @@
+[1.177s] Invoking command in '/home/ubuntu/ws/Libero/src/main': PYTHONPATH=/home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/main build --build-base /home/ubuntu/ws/Libero/build/main/build install --prefix /home/ubuntu/ws/Libero/install/main --record /home/ubuntu/ws/Libero/build/main/install.log --single-version-externally-managed
+[2.242s] running egg_info
+[2.244s] creating ../../build/main/main.egg-info
+[2.245s] writing ../../build/main/main.egg-info/PKG-INFO
+[2.246s] writing dependency_links to ../../build/main/main.egg-info/dependency_links.txt
+[2.247s] writing entry points to ../../build/main/main.egg-info/entry_points.txt
+[2.248s] writing requirements to ../../build/main/main.egg-info/requires.txt
+[2.248s] writing top-level names to ../../build/main/main.egg-info/top_level.txt
+[2.279s] writing manifest file '../../build/main/main.egg-info/SOURCES.txt'
+[2.493s] reading manifest file '../../build/main/main.egg-info/SOURCES.txt'
+[2.497s] writing manifest file '../../build/main/main.egg-info/SOURCES.txt'
+[2.498s] running build
+[2.498s] running build_py
+[2.499s] creating /home/ubuntu/ws/Libero/build/main/build
+[2.500s] creating /home/ubuntu/ws/Libero/build/main/build/lib
+[2.500s] creating /home/ubuntu/ws/Libero/build/main/build/lib/python_programs
+[2.501s] copying python_programs/__init__.py -> /home/ubuntu/ws/Libero/build/main/build/lib/python_programs
+[2.501s] copying python_programs/main.py -> /home/ubuntu/ws/Libero/build/main/build/lib/python_programs
+[2.506s] creating /home/ubuntu/ws/Libero/build/main/build/lib/python_programs/switch
+[2.507s] copying python_programs/switch/__init__.py -> /home/ubuntu/ws/Libero/build/main/build/lib/python_programs/switch
+[2.507s] copying python_programs/switch/limit_switch.py -> /home/ubuntu/ws/Libero/build/main/build/lib/python_programs/switch
+[2.511s] creating /home/ubuntu/ws/Libero/build/main/build/lib/python_programs/camera
+[2.511s] copying python_programs/camera/__init__.py -> /home/ubuntu/ws/Libero/build/main/build/lib/python_programs/camera
+[2.512s] copying python_programs/camera/blob_track.py -> /home/ubuntu/ws/Libero/build/main/build/lib/python_programs/camera
+[2.513s] running install
+[2.518s] running install_lib
+[2.526s] creating /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/python_programs
+[2.526s] creating /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/python_programs/camera
+[2.527s] copying /home/ubuntu/ws/Libero/build/main/build/lib/python_programs/camera/__init__.py -> /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/python_programs/camera
+[2.528s] copying /home/ubuntu/ws/Libero/build/main/build/lib/python_programs/camera/blob_track.py -> /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/python_programs/camera
+[2.528s] copying /home/ubuntu/ws/Libero/build/main/build/lib/python_programs/__init__.py -> /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/python_programs
+[2.530s] creating /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/python_programs/switch
+[2.530s] copying /home/ubuntu/ws/Libero/build/main/build/lib/python_programs/switch/limit_switch.py -> /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/python_programs/switch
+[2.531s] copying /home/ubuntu/ws/Libero/build/main/build/lib/python_programs/switch/__init__.py -> /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/python_programs/switch
+[2.531s] copying /home/ubuntu/ws/Libero/build/main/build/lib/python_programs/main.py -> /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/python_programs
+[2.535s] byte-compiling /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/python_programs/camera/__init__.py to __init__.cpython-38.pyc
+[2.540s] byte-compiling /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/python_programs/camera/blob_track.py to blob_track.cpython-38.pyc
+[2.543s] byte-compiling /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/python_programs/__init__.py to __init__.cpython-38.pyc
+[2.544s] byte-compiling /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/python_programs/switch/limit_switch.py to limit_switch.cpython-38.pyc
+[2.546s] byte-compiling /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/python_programs/switch/__init__.py to __init__.cpython-38.pyc
+[2.547s] byte-compiling /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/python_programs/main.py to main.cpython-38.pyc
+[2.557s] running install_egg_info
+[2.570s] Copying ../../build/main/main.egg-info to /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/main-0.0.0-py3.8.egg-info
+[2.576s] running install_scripts
+[2.676s] Installing main script to /home/ubuntu/ws/Libero/install/main/lib/main
+[2.678s] writing list of installed files to '/home/ubuntu/ws/Libero/build/main/install.log'
+[2.777s] Invoked command in '/home/ubuntu/ws/Libero/src/main' returned '0': PYTHONPATH=/home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/main build --build-base /home/ubuntu/ws/Libero/build/main/build install --prefix /home/ubuntu/ws/Libero/install/main --record /home/ubuntu/ws/Libero/build/main/install.log --single-version-externally-managed
