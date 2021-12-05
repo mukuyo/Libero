@@ -1,0 +1,2 @@
+int64 ball_catch
+float64 degree_ball_robot

@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from message_info/msg/RealCommands.msg
+// generated code does not contain a copyright notice
+
+
+module message_info {
+  module msg {
+    struct RealCommands {
+      int64 ball_catch;
+
+      double degree_ball_robot;
+    };
+  };
+};

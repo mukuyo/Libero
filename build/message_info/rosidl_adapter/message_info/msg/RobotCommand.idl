@@ -1,0 +1,40 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from message_info/msg/RobotCommand.msg
+// generated code does not contain a copyright notice
+
+
+module message_info {
+  module msg {
+    struct RobotCommand {
+      int64 robot_id;
+
+      @verbatim (language="comment", text=
+        " /forwardback, m/s")
+      double vel_surge;
+
+      @verbatim (language="comment", text=
+        " left/right, m/s")
+      double vel_sway;
+
+      @verbatim (language="comment", text=
+        " rotation, rad/s")
+      double vel_angular;
+
+      @verbatim (language="comment", text=
+        " 0.0 ~ 1.0")
+      double kick_power;
+
+      @verbatim (language="comment", text=
+        " True/False")
+      boolean chip_enable;
+
+      @verbatim (language="comment", text=
+        " 0.0 ~ 1.0")
+      double dribble_power;
+
+      boolean is_yellow;
+
+      boolean finish;
+    };
+  };
+};

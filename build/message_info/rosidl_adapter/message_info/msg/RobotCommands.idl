@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from message_info/msg/RobotCommands.msg
+// generated code does not contain a copyright notice
+
+#include "message_info/msg/RobotCommand.idl"
+#include "std_msgs/msg/Header.idl"
+
+module message_info {
+  module msg {
+    typedef message_info::msg::RobotCommand message_info__msg__RobotCommand;
+    typedef message_info__msg__RobotCommand message_info__msg__RobotCommand__16[16];
+    struct RobotCommands {
+      std_msgs::msg::Header header;
+
+      boolean is_yellow;
+
+      message_info__msg__RobotCommand__16 commands;
+    };
+  };
+};

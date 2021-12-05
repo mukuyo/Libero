@@ -1,0 +1,39 @@
+[1.149s] Invoking command in '/home/ubuntu/ws/Libero/src/main': PYTHONPATH=/home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/main build --build-base /home/ubuntu/ws/Libero/build/main/build install --prefix /home/ubuntu/ws/Libero/install/main --record /home/ubuntu/ws/Libero/build/main/install.log --single-version-externally-managed
+[2.200s] running egg_info
+[2.203s] creating ../../build/main/main.egg-info
+[2.204s] writing ../../build/main/main.egg-info/PKG-INFO
+[2.205s] writing dependency_links to ../../build/main/main.egg-info/dependency_links.txt
+[2.206s] writing entry points to ../../build/main/main.egg-info/entry_points.txt
+[2.207s] writing requirements to ../../build/main/main.egg-info/requires.txt
+[2.208s] writing top-level names to ../../build/main/main.egg-info/top_level.txt
+[2.228s] writing manifest file '../../build/main/main.egg-info/SOURCES.txt'
+[2.417s] reading manifest file '../../build/main/main.egg-info/SOURCES.txt'
+[2.423s] writing manifest file '../../build/main/main.egg-info/SOURCES.txt'
+[2.424s] running build
+[2.425s] running build_py
+[2.425s] creating /home/ubuntu/ws/Libero/build/main/build
+[2.426s] creating /home/ubuntu/ws/Libero/build/main/build/lib
+[2.426s] creating /home/ubuntu/ws/Libero/build/main/build/lib/python_programs
+[2.427s] copying python_programs/__init__.py -> /home/ubuntu/ws/Libero/build/main/build/lib/python_programs
+[2.427s] copying python_programs/main.py -> /home/ubuntu/ws/Libero/build/main/build/lib/python_programs
+[2.428s] creating /home/ubuntu/ws/Libero/build/main/build/lib/python_programs/switch
+[2.429s] copying python_programs/switch/__init__.py -> /home/ubuntu/ws/Libero/build/main/build/lib/python_programs/switch
+[2.429s] copying python_programs/switch/limit_switch.py -> /home/ubuntu/ws/Libero/build/main/build/lib/python_programs/switch
+[2.429s] running install
+[2.433s] running install_lib
+[2.442s] creating /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/python_programs
+[2.442s] copying /home/ubuntu/ws/Libero/build/main/build/lib/python_programs/__init__.py -> /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/python_programs
+[2.443s] creating /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/python_programs/switch
+[2.443s] copying /home/ubuntu/ws/Libero/build/main/build/lib/python_programs/switch/limit_switch.py -> /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/python_programs/switch
+[2.444s] copying /home/ubuntu/ws/Libero/build/main/build/lib/python_programs/switch/__init__.py -> /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/python_programs/switch
+[2.445s] copying /home/ubuntu/ws/Libero/build/main/build/lib/python_programs/main.py -> /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/python_programs
+[2.448s] byte-compiling /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/python_programs/__init__.py to __init__.cpython-38.pyc
+[2.454s] byte-compiling /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/python_programs/switch/limit_switch.py to limit_switch.cpython-38.pyc
+[2.456s] byte-compiling /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/python_programs/switch/__init__.py to __init__.cpython-38.pyc
+[2.457s] byte-compiling /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/python_programs/main.py to main.cpython-38.pyc
+[2.460s] running install_egg_info
+[2.473s] Copying ../../build/main/main.egg-info to /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/main-0.0.0-py3.8.egg-info
+[2.479s] running install_scripts
+[2.589s] Installing main script to /home/ubuntu/ws/Libero/install/main/lib/main
+[2.590s] writing list of installed files to '/home/ubuntu/ws/Libero/build/main/install.log'
+[2.690s] Invoked command in '/home/ubuntu/ws/Libero/src/main' returned '0': PYTHONPATH=/home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/main build --build-base /home/ubuntu/ws/Libero/build/main/build install --prefix /home/ubuntu/ws/Libero/install/main --record /home/ubuntu/ws/Libero/build/main/install.log --single-version-externally-managed

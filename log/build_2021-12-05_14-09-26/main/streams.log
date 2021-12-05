@@ -1,0 +1,20 @@
+[1.126s] Invoking command in '/home/ubuntu/ws/Libero/src/main': PYTHONPATH=/home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/main build --build-base /home/ubuntu/ws/Libero/build/main/build install --prefix /home/ubuntu/ws/Libero/install/main --record /home/ubuntu/ws/Libero/build/main/install.log --single-version-externally-managed
+[2.104s] running egg_info
+[2.106s] writing ../../build/main/main.egg-info/PKG-INFO
+[2.108s] writing dependency_links to ../../build/main/main.egg-info/dependency_links.txt
+[2.109s] writing entry points to ../../build/main/main.egg-info/entry_points.txt
+[2.110s] writing requirements to ../../build/main/main.egg-info/requires.txt
+[2.110s] writing top-level names to ../../build/main/main.egg-info/top_level.txt
+[2.288s] reading manifest file '../../build/main/main.egg-info/SOURCES.txt'
+[2.292s] writing manifest file '../../build/main/main.egg-info/SOURCES.txt'
+[2.292s] running build
+[2.293s] running build_py
+[2.297s] running install
+[2.302s] running install_lib
+[2.313s] running install_egg_info
+[2.322s] removing '/home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/main-0.0.0-py3.8.egg-info' (and everything under it)
+[2.323s] Copying ../../build/main/main.egg-info to /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/main-0.0.0-py3.8.egg-info
+[2.330s] running install_scripts
+[2.410s] Installing main script to /home/ubuntu/ws/Libero/install/main/lib/main
+[2.411s] writing list of installed files to '/home/ubuntu/ws/Libero/build/main/install.log'
+[2.506s] Invoked command in '/home/ubuntu/ws/Libero/src/main' returned '0': PYTHONPATH=/home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/main build --build-base /home/ubuntu/ws/Libero/build/main/build install --prefix /home/ubuntu/ws/Libero/install/main --record /home/ubuntu/ws/Libero/build/main/install.log --single-version-externally-managed

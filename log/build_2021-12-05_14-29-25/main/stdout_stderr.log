@@ -1,0 +1,26 @@
+running egg_info
+writing ../../build/main/main.egg-info/PKG-INFO
+writing dependency_links to ../../build/main/main.egg-info/dependency_links.txt
+writing entry points to ../../build/main/main.egg-info/entry_points.txt
+writing requirements to ../../build/main/main.egg-info/requires.txt
+writing top-level names to ../../build/main/main.egg-info/top_level.txt
+reading manifest file '../../build/main/main.egg-info/SOURCES.txt'
+writing manifest file '../../build/main/main.egg-info/SOURCES.txt'
+running build
+running build_py
+copying python_programs/main.py -> /home/ubuntu/ws/Libero/build/main/build/lib/python_programs
+running install
+running install_lib
+copying /home/ubuntu/ws/Libero/build/main/build/lib/python_programs/main.py -> /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/python_programs
+byte-compiling /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/python_programs/main.py to main.cpython-38.pyc
+  File "/home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/python_programs/main.py", line 173
+    for in range(7):
+        ^
+SyntaxError: invalid syntax
+
+running install_egg_info
+removing '/home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/main-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/main/main.egg-info to /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/main-0.0.0-py3.8.egg-info
+running install_scripts
+Installing main script to /home/ubuntu/ws/Libero/install/main/lib/main
+writing list of installed files to '/home/ubuntu/ws/Libero/build/main/install.log'
