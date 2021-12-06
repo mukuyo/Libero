@@ -1,0 +1,93 @@
+[0.000000] (-) TimerEvent: {}
+[0.000978] (main) JobQueued: {'identifier': 'main', 'dependencies': OrderedDict()}
+[0.001283] (message_info) JobQueued: {'identifier': 'message_info', 'dependencies': OrderedDict()}
+[0.002109] (main) JobStarted: {'identifier': 'main'}
+[0.055169] (message_info) JobStarted: {'identifier': 'message_info'}
+[0.099313] (-) TimerEvent: {}
+[0.200287] (-) TimerEvent: {}
+[0.300975] (-) TimerEvent: {}
+[0.401654] (-) TimerEvent: {}
+[0.502453] (-) TimerEvent: {}
+[0.603093] (-) TimerEvent: {}
+[0.703735] (-) TimerEvent: {}
+[0.804400] (-) TimerEvent: {}
+[0.905081] (-) TimerEvent: {}
+[1.005744] (-) TimerEvent: {}
+[1.106541] (-) TimerEvent: {}
+[1.140549] (message_info) JobProgress: {'identifier': 'message_info', 'progress': 'cmake'}
+[1.144580] (message_info) JobProgress: {'identifier': 'message_info', 'progress': 'build'}
+[1.148007] (message_info) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ws/Libero/build/message_info', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/ws/Libero/build/message_info', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.0.175 35310 22'), ('LC_TIME', 'ja_JP.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/ws/Libero/install/message_info/lib:/home/ubuntu/ws/SSLRasp/install/message_info/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ws/Libero/install:/home/ubuntu/ws/ydlidar_ros2_driver/install:/home/ubuntu/ws/SSLRasp/install:/home/ubuntu/lidar_scan/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ws/Libero/install/message_info:/home/ubuntu/ws/Libero/install/main:/home/ubuntu/ws/SSLRasp/install/rasp:/home/ubuntu/ws/SSLRasp/install/message_info:/home/ubuntu/ws/ydlidar_ros2_driver/install/ydlidar_ros2_driver:/home/ubuntu/lidar_scan/install/robo_exp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ja_JP.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('PWD', '/home/ubuntu/ws/Libero/build/message_info'), ('OPENCR_PORT', '/dev/ttyACM0'), ('TURTLEBOT3_MODEL', 'burger'), ('SSH_CONNECTION', '192.168.0.175 35310 192.168.0.193 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages:/home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages:/home/ubuntu/ws/SSLRasp/install/rasp/lib/python3.8/site-packages:/home/ubuntu/ws/SSLRasp/install/message_info/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ws/Libero/install/message_info:/home/ubuntu/ws/SSLRasp/install/message_info:/home/ubuntu/ws/ydlidar_ros2_driver/install/ydlidar_ros2_driver:/home/ubuntu/lidar_scan/install/robo_exp:/home/ubuntu/ws/Libero/install/main:/home/ubuntu/ws/SSLRasp/install/rasp:/opt/ros/foxy'), ('OPENCR_MODEL', 'burger')]), 'shell': False}
+[1.175292] (main) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/main', 'build', '--build-base', '/home/ubuntu/ws/Libero/build/main/build', 'install', '--prefix', '/home/ubuntu/ws/Libero/install/main', '--record', '/home/ubuntu/ws/Libero/build/main/install.log', '--single-version-externally-managed'], 'cwd': '/home/ubuntu/ws/Libero/src/main', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.0.175 35310 22', 'LC_TIME': 'ja_JP.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/ws/Libero/install/message_info/lib:/home/ubuntu/ws/SSLRasp/install/message_info/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'ja_JP.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/ws/Libero/install:/home/ubuntu/ws/ydlidar_ros2_driver/install:/home/ubuntu/ws/SSLRasp/install:/home/ubuntu/lidar_scan/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/ubuntu/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'ja_JP.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': 'localhost:10.0', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'ja_JP.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '10', 'AMENT_PREFIX_PATH': '/home/ubuntu/ws/Libero/install/message_info:/home/ubuntu/ws/Libero/install/main:/home/ubuntu/ws/SSLRasp/install/rasp:/home/ubuntu/ws/SSLRasp/install/message_info:/home/ubuntu/ws/ydlidar_ros2_driver/install/ydlidar_ros2_driver:/home/ubuntu/lidar_scan/install/robo_exp:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'ja_JP.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ja_JP.UTF-8', 'LC_IDENTIFICATION': 'ja_JP.UTF-8', 'PWD': '/home/ubuntu/ws/Libero/build/main', 'OPENCR_PORT': '/dev/ttyACM0', 'TURTLEBOT3_MODEL': 'burger', 'SSH_CONNECTION': '192.168.0.175 35310 192.168.0.193 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages:/home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages:/home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages:/home/ubuntu/ws/SSLRasp/install/rasp/lib/python3.8/site-packages:/home/ubuntu/ws/SSLRasp/install/message_info/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'ja_JP.UTF-8', 'LC_PAPER': 'ja_JP.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/ws/Libero/install/message_info:/home/ubuntu/ws/SSLRasp/install/message_info:/home/ubuntu/ws/ydlidar_ros2_driver/install/ydlidar_ros2_driver:/home/ubuntu/lidar_scan/install/robo_exp', 'OPENCR_MODEL': 'burger'}, 'shell': False}
+[1.206802] (-) TimerEvent: {}
+[1.307653] (-) TimerEvent: {}
+[1.408443] (-) TimerEvent: {}
+[1.427400] (message_info) StdoutLine: {'line': b'[  2%] Built target message_info__cpp\n'}
+[1.450611] (message_info) StdoutLine: {'line': b'[ 12%] Built target message_info__rosidl_generator_c\n'}
+[1.508651] (-) TimerEvent: {}
+[1.609903] (-) TimerEvent: {}
+[1.622180] (message_info) StdoutLine: {'line': b'[ 23%] Built target message_info__rosidl_typesupport_introspection_c\n'}
+[1.646254] (message_info) StdoutLine: {'line': b'[ 34%] Built target message_info__rosidl_typesupport_introspection_cpp\n'}
+[1.649789] (message_info) StdoutLine: {'line': b'[ 44%] Built target message_info__rosidl_typesupport_cpp\n'}
+[1.679441] (message_info) StdoutLine: {'line': b'[ 55%] Built target message_info__rosidl_typesupport_fastrtps_cpp\n'}
+[1.710033] (-) TimerEvent: {}
+[1.773730] (message_info) StdoutLine: {'line': b'[ 65%] Built target message_info__rosidl_typesupport_c\n'}
+[1.810212] (-) TimerEvent: {}
+[1.859917] (message_info) StdoutLine: {'line': b'[ 76%] Built target message_info__rosidl_typesupport_fastrtps_c\n'}
+[1.910446] (-) TimerEvent: {}
+[1.962725] (message_info) StdoutLine: {'line': b'[ 76%] Built target message_info\n'}
+[2.010616] (-) TimerEvent: {}
+[2.068693] (message_info) StdoutLine: {'line': b'[ 78%] Built target message_info__py\n'}
+[2.110788] (-) TimerEvent: {}
+[2.211729] (-) TimerEvent: {}
+[2.234118] (message_info) StdoutLine: {'line': b'[ 87%] Built target message_info__python\n'}
+[2.255218] (main) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[2.256447] (main) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2859, in get_entry_map\n'}
+[2.257142] (message_info) StderrLine: {'line': b'make[2]: *** [CMakeFiles/message_info__rosidl_typesupport_introspection_c__pyext.dir/build.make:134: CMakeFiles/message_info__rosidl_typesupport_introspection_c__pyext.dir/depend] Interrupt\n'}
+[2.257958] (message_info) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:156: CMakeFiles/message_info__rosidl_typesupport_introspection_c__pyext.dir/all] Interrupt\n'}
+[2.258527] (main) StderrLine: {'line': b'    ep_map = self._ep_map\n'}
+[2.259347] (main) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2817, in __getattr__\n'}
+[2.267089] (message_info) StderrLine: {'line': b'make[2]: *** [CMakeFiles/message_info__rosidl_typesupport_c__pyext.dir/build.make:133: CMakeFiles/message_info__rosidl_typesupport_c__pyext.dir/depend] Interrupt\n'}
+[2.268106] (message_info) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:124: CMakeFiles/message_info__rosidl_typesupport_c__pyext.dir/all] Interrupt\n'}
+[2.269795] (main) StderrLine: {'line': b'    raise AttributeError(attr)\n'}
+[2.271240] (message_info) StderrLine: {'line': b'make[2]: *** [CMakeFiles/message_info__rosidl_typesupport_fastrtps_c__pyext.dir/build.make:153: CMakeFiles/message_info__rosidl_typesupport_fastrtps_c__pyext.dir/depend] Interrupt\n'}
+[2.272494] (main) StderrLine: {'line': b'AttributeError: _ep_map\n'}
+[2.274347] (main) StderrLine: {'line': b'\n'}
+[2.281982] (main) StderrLine: {'line': b'During handling of the above exception, another exception occurred:\n'}
+[2.283819] (main) StderrLine: {'line': b'\n'}
+[2.284955] (main) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[2.288249] (main) StderrLine: {'line': b'  File "setup.py", line 5, in <module>\n'}
+[2.291395] (message_info) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:189: CMakeFiles/message_info__rosidl_typesupport_fastrtps_c__pyext.dir/all] Interrupt\n'}
+[2.294296] (main) StderrLine: {'line': b'    setup(\n'}
+[2.295160] (main) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 143, in setup\n'}
+[2.296224] (main) StderrLine: {'line': b'    _install_setup_requires(attrs)\n'}
+[2.297235] (main) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 131, in _install_setup_requires\n'}
+[2.298116] (message_info) StderrLine: {'line': b'make: *** [Makefile:141: all] Interrupt\n'}
+[2.298905] (main) StderrLine: {'line': b'    dist = distutils.core.Distribution(dict(\n'}
+[2.299567] (main) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 445, in __init__\n'}
+[2.300677] (main) StderrLine: {'line': b"    for ep in pkg_resources.iter_entry_points('distutils.setup_keywords'):\n"}
+[2.301764] (main) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 657, in <genexpr>\n'}
+[2.303000] (main) StderrLine: {'line': b'    for entry in dist.get_entry_map(group).values()\n'}
+[2.304104] (main) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2861, in get_entry_map\n'}
+[2.305175] (main) StderrLine: {'line': b'    ep_map = self._ep_map = EntryPoint.parse_map(\n'}
+[2.306363] (main) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2529, in parse_map\n'}
+[2.307372] (main) StderrLine: {'line': b'    for group, lines in data:\n'}
+[2.308521] (main) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3201, in split_sections\n'}
+[2.309519] (main) StderrLine: {'line': b'    for line in yield_lines(s):\n'}
+[2.310653] (main) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2389, in yield_lines\n'}
+[2.311797] (-) TimerEvent: {}
+[2.312908] (main) StderrLine: {'line': b'    for ss in strs:\n'}
+[2.314062] (message_info) CommandEnded: {'returncode': -2}
+[2.317228] (main) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2768, in _get_metadata\n'}
+[2.318445] (main) StderrLine: {'line': b'    if self.has_metadata(name):\n'}
+[2.319749] (main) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 1415, in has_metadata\n'}
+[2.321016] (main) StderrLine: {'line': b'    return self._has(path)\n'}
+[2.322239] (main) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 1605, in _has\n'}
+[2.323373] (main) StderrLine: {'line': b'    return os.path.exists(path)\n'}
+[2.324365] (main) StderrLine: {'line': b'  File "/usr/lib/python3.8/genericpath.py", line 19, in exists\n'}
+[2.325496] (main) StderrLine: {'line': b'    os.stat(path)\n'}
+[2.326597] (main) StderrLine: {'line': b'KeyboardInterrupt\n'}
+[2.355127] (main) CommandEnded: {'returncode': -2}
+[2.357319] (main) JobEnded: {'identifier': 'main', 'rc': 'SIGINT'}
+[2.408671] (message_info) JobEnded: {'identifier': 'message_info', 'rc': 'SIGINT'}
+[2.411914] (-) TimerEvent: {}
+[2.420487] (-) EventReactorShutdown: {}

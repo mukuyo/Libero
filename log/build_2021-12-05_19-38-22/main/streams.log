@@ -1,0 +1,39 @@
+[1.182s] Invoking command in '/home/ubuntu/ws/Libero/src/main': PYTHONPATH=/home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/main build --build-base /home/ubuntu/ws/Libero/build/main/build install --prefix /home/ubuntu/ws/Libero/install/main --record /home/ubuntu/ws/Libero/build/main/install.log --single-version-externally-managed
+[2.253s] Traceback (most recent call last):
+[2.254s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2859, in get_entry_map
+[2.256s]     ep_map = self._ep_map
+[2.264s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2817, in __getattr__
+[2.268s]     raise AttributeError(attr)
+[2.271s] AttributeError: _ep_map
+[2.278s] 
+[2.281s] During handling of the above exception, another exception occurred:
+[2.282s] 
+[2.285s] Traceback (most recent call last):
+[2.288s]   File "setup.py", line 5, in <module>
+[2.292s]     setup(
+[2.293s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 143, in setup
+[2.294s]     _install_setup_requires(attrs)
+[2.295s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 131, in _install_setup_requires
+[2.297s]     dist = distutils.core.Distribution(dict(
+[2.298s]   File "/usr/lib/python3/dist-packages/setuptools/dist.py", line 445, in __init__
+[2.299s]     for ep in pkg_resources.iter_entry_points('distutils.setup_keywords'):
+[2.300s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 657, in <genexpr>
+[2.301s]     for entry in dist.get_entry_map(group).values()
+[2.302s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2861, in get_entry_map
+[2.303s]     ep_map = self._ep_map = EntryPoint.parse_map(
+[2.304s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2529, in parse_map
+[2.305s]     for group, lines in data:
+[2.306s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3201, in split_sections
+[2.307s]     for line in yield_lines(s):
+[2.309s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2389, in yield_lines
+[2.311s]     for ss in strs:
+[2.315s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2768, in _get_metadata
+[2.317s]     if self.has_metadata(name):
+[2.318s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 1415, in has_metadata
+[2.319s]     return self._has(path)
+[2.320s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 1605, in _has
+[2.321s]     return os.path.exists(path)
+[2.322s]   File "/usr/lib/python3.8/genericpath.py", line 19, in exists
+[2.324s]     os.stat(path)
+[2.324s] KeyboardInterrupt
+[2.353s] Invoked command in '/home/ubuntu/ws/Libero/src/main' returned '-2': PYTHONPATH=/home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/main build --build-base /home/ubuntu/ws/Libero/build/main/build install --prefix /home/ubuntu/ws/Libero/install/main --record /home/ubuntu/ws/Libero/build/main/install.log --single-version-externally-managed

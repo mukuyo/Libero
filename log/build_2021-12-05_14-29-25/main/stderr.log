@@ -1,5 +1,0 @@
-  File "/home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/python_programs/main.py", line 173
-    for in range(7):
-        ^
-SyntaxError: invalid syntax
-

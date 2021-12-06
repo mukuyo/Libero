@@ -1,0 +1,225 @@
+[0.000000] (-) TimerEvent: {}
+[0.001015] (main) JobQueued: {'identifier': 'main', 'dependencies': OrderedDict()}
+[0.001323] (message_info) JobQueued: {'identifier': 'message_info', 'dependencies': OrderedDict()}
+[0.002181] (main) JobStarted: {'identifier': 'main'}
+[0.057048] (message_info) JobStarted: {'identifier': 'message_info'}
+[0.099328] (-) TimerEvent: {}
+[0.200468] (-) TimerEvent: {}
+[0.301094] (-) TimerEvent: {}
+[0.401818] (-) TimerEvent: {}
+[0.502565] (-) TimerEvent: {}
+[0.603203] (-) TimerEvent: {}
+[0.703874] (-) TimerEvent: {}
+[0.804534] (-) TimerEvent: {}
+[0.905279] (-) TimerEvent: {}
+[1.006028] (-) TimerEvent: {}
+[1.106895] (-) TimerEvent: {}
+[1.129410] (message_info) JobProgress: {'identifier': 'message_info', 'progress': 'cmake'}
+[1.132893] (message_info) JobProgress: {'identifier': 'message_info', 'progress': 'build'}
+[1.136270] (message_info) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/ws/Libero/build/message_info', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/ws/Libero/build/message_info', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.0.175 35310 22'), ('LC_TIME', 'ja_JP.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/ws/Libero/install/message_info/lib:/home/ubuntu/ws/SSLRasp/install/message_info/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ws/Libero/install:/home/ubuntu/ws/ydlidar_ros2_driver/install:/home/ubuntu/ws/SSLRasp/install:/home/ubuntu/lidar_scan/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ws/Libero/install/message_info:/home/ubuntu/ws/Libero/install/main:/home/ubuntu/ws/SSLRasp/install/rasp:/home/ubuntu/ws/SSLRasp/install/message_info:/home/ubuntu/ws/ydlidar_ros2_driver/install/ydlidar_ros2_driver:/home/ubuntu/lidar_scan/install/robo_exp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ja_JP.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('PWD', '/home/ubuntu/ws/Libero/build/message_info'), ('OPENCR_PORT', '/dev/ttyACM0'), ('TURTLEBOT3_MODEL', 'burger'), ('SSH_CONNECTION', '192.168.0.175 35310 192.168.0.193 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages:/home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages:/home/ubuntu/ws/SSLRasp/install/rasp/lib/python3.8/site-packages:/home/ubuntu/ws/SSLRasp/install/message_info/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ws/Libero/install/message_info:/home/ubuntu/ws/SSLRasp/install/message_info:/home/ubuntu/ws/ydlidar_ros2_driver/install/ydlidar_ros2_driver:/home/ubuntu/lidar_scan/install/robo_exp:/home/ubuntu/ws/Libero/install/main:/home/ubuntu/ws/SSLRasp/install/rasp:/opt/ros/foxy'), ('OPENCR_MODEL', 'burger')]), 'shell': False}
+[1.164498] (main) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/main', 'build', '--build-base', '/home/ubuntu/ws/Libero/build/main/build', 'install', '--prefix', '/home/ubuntu/ws/Libero/install/main', '--record', '/home/ubuntu/ws/Libero/build/main/install.log', '--single-version-externally-managed'], 'cwd': '/home/ubuntu/ws/Libero/src/main', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.0.175 35310 22', 'LC_TIME': 'ja_JP.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/ws/Libero/install/message_info/lib:/home/ubuntu/ws/SSLRasp/install/message_info/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'ja_JP.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/ws/Libero/install:/home/ubuntu/ws/ydlidar_ros2_driver/install:/home/ubuntu/ws/SSLRasp/install:/home/ubuntu/lidar_scan/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/ubuntu/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'ja_JP.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': 'localhost:10.0', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'ja_JP.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '10', 'AMENT_PREFIX_PATH': '/home/ubuntu/ws/Libero/install/message_info:/home/ubuntu/ws/Libero/install/main:/home/ubuntu/ws/SSLRasp/install/rasp:/home/ubuntu/ws/SSLRasp/install/message_info:/home/ubuntu/ws/ydlidar_ros2_driver/install/ydlidar_ros2_driver:/home/ubuntu/lidar_scan/install/robo_exp:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'ja_JP.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ja_JP.UTF-8', 'LC_IDENTIFICATION': 'ja_JP.UTF-8', 'PWD': '/home/ubuntu/ws/Libero/build/main', 'OPENCR_PORT': '/dev/ttyACM0', 'TURTLEBOT3_MODEL': 'burger', 'SSH_CONNECTION': '192.168.0.175 35310 192.168.0.193 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages:/home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages:/home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages:/home/ubuntu/ws/SSLRasp/install/rasp/lib/python3.8/site-packages:/home/ubuntu/ws/SSLRasp/install/message_info/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'ja_JP.UTF-8', 'LC_PAPER': 'ja_JP.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/ws/Libero/install/message_info:/home/ubuntu/ws/SSLRasp/install/message_info:/home/ubuntu/ws/ydlidar_ros2_driver/install/ydlidar_ros2_driver:/home/ubuntu/lidar_scan/install/robo_exp', 'OPENCR_MODEL': 'burger'}, 'shell': False}
+[1.207145] (-) TimerEvent: {}
+[1.308024] (-) TimerEvent: {}
+[1.409982] (-) TimerEvent: {}
+[1.417176] (message_info) StdoutLine: {'line': b'[  2%] Built target message_info__cpp\n'}
+[1.440731] (message_info) StdoutLine: {'line': b'[ 12%] Built target message_info__rosidl_generator_c\n'}
+[1.510554] (-) TimerEvent: {}
+[1.609938] (message_info) StdoutLine: {'line': b'[ 23%] Built target message_info__rosidl_typesupport_cpp\n'}
+[1.610756] (-) TimerEvent: {}
+[1.627975] (message_info) StdoutLine: {'line': b'[ 34%] Built target message_info__rosidl_typesupport_introspection_cpp\n'}
+[1.635532] (message_info) StdoutLine: {'line': b'[ 44%] Built target message_info__rosidl_typesupport_fastrtps_cpp\n'}
+[1.663329] (message_info) StdoutLine: {'line': b'[ 55%] Built target message_info__rosidl_typesupport_introspection_c\n'}
+[1.710931] (-) TimerEvent: {}
+[1.770571] (message_info) StdoutLine: {'line': b'[ 65%] Built target message_info__rosidl_typesupport_c\n'}
+[1.811105] (-) TimerEvent: {}
+[1.817956] (message_info) StdoutLine: {'line': b'[ 76%] Built target message_info__rosidl_typesupport_fastrtps_c\n'}
+[1.911274] (-) TimerEvent: {}
+[1.921726] (message_info) StdoutLine: {'line': b'[ 76%] Built target message_info\n'}
+[2.011461] (-) TimerEvent: {}
+[2.028461] (message_info) StdoutLine: {'line': b'[ 78%] Built target message_info__py\n'}
+[2.111628] (-) TimerEvent: {}
+[2.192191] (message_info) StdoutLine: {'line': b'[ 87%] Built target message_info__python\n'}
+[2.211889] (-) TimerEvent: {}
+[2.312744] (-) TimerEvent: {}
+[2.355345] (main) StdoutLine: {'line': b'running egg_info\n'}
+[2.359413] (main) StdoutLine: {'line': b'writing ../../build/main/main.egg-info/PKG-INFO\n'}
+[2.361554] (main) StdoutLine: {'line': b'writing dependency_links to ../../build/main/main.egg-info/dependency_links.txt\n'}
+[2.362973] (main) StdoutLine: {'line': b'writing entry points to ../../build/main/main.egg-info/entry_points.txt\n'}
+[2.364468] (main) StdoutLine: {'line': b'writing requirements to ../../build/main/main.egg-info/requires.txt\n'}
+[2.365950] (main) StdoutLine: {'line': b'writing top-level names to ../../build/main/main.egg-info/top_level.txt\n'}
+[2.374402] (message_info) StdoutLine: {'line': b'[ 97%] Built target message_info__rosidl_typesupport_fastrtps_c__pyext\n'}
+[2.375648] (message_info) StdoutLine: {'line': b'[ 97%] Built target message_info__rosidl_typesupport_introspection_c__pyext\n'}
+[2.377869] (message_info) StdoutLine: {'line': b'[100%] Built target message_info__rosidl_typesupport_c__pyext\n'}
+[2.412975] (-) TimerEvent: {}
+[2.429057] (message_info) CommandEnded: {'returncode': 0}
+[2.513175] (-) TimerEvent: {}
+[2.529762] (main) StdoutLine: {'line': b"reading manifest file '../../build/main/main.egg-info/SOURCES.txt'\n"}
+[2.533338] (main) StdoutLine: {'line': b"writing manifest file '../../build/main/main.egg-info/SOURCES.txt'\n"}
+[2.534950] (main) StdoutLine: {'line': b'running build\n'}
+[2.535962] (main) StdoutLine: {'line': b'running build_py\n'}
+[2.536402] (main) StdoutLine: {'line': b'copying python_programs/main.py -> /home/ubuntu/ws/Libero/build/main/build/lib/python_programs\n'}
+[2.537073] (main) StdoutLine: {'line': b'running install\n'}
+[2.540450] (main) StdoutLine: {'line': b'running install_lib\n'}
+[2.546257] (main) StdoutLine: {'line': b'copying /home/ubuntu/ws/Libero/build/main/build/lib/python_programs/main.py -> /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/python_programs\n'}
+[2.549789] (main) StdoutLine: {'line': b'byte-compiling /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/python_programs/main.py to main.cpython-38.pyc\n'}
+[2.559101] (main) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.565831] (main) StdoutLine: {'line': b"removing '/home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/main-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[2.567357] (main) StdoutLine: {'line': b'Copying ../../build/main/main.egg-info to /home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages/main-0.0.0-py3.8.egg-info\n'}
+[2.572641] (main) StdoutLine: {'line': b'running install_scripts\n'}
+[2.613276] (-) TimerEvent: {}
+[2.645878] (main) StdoutLine: {'line': b'Installing main script to /home/ubuntu/ws/Libero/install/main/lib/main\n'}
+[2.647684] (main) StdoutLine: {'line': b"writing list of installed files to '/home/ubuntu/ws/Libero/build/main/install.log'\n"}
+[2.713596] (-) TimerEvent: {}
+[2.750301] (main) CommandEnded: {'returncode': 0}
+[2.810532] (main) JobEnded: {'identifier': 'main', 'rc': 0}
+[2.813680] (-) TimerEvent: {}
+[2.914254] (-) TimerEvent: {}
+[3.005661] (message_info) JobProgress: {'identifier': 'message_info', 'progress': 'install'}
+[3.014592] (-) TimerEvent: {}
+[3.051508] (message_info) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/ws/Libero/build/message_info'], 'cwd': '/home/ubuntu/ws/Libero/build/message_info', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '192.168.0.175 35310 22'), ('LC_TIME', 'ja_JP.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ubuntu/ws/Libero/install/message_info/lib:/home/ubuntu/ws/SSLRasp/install/message_info/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ja_JP.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/ws/Libero/install:/home/ubuntu/ws/ydlidar_ros2_driver/install:/home/ubuntu/ws/SSLRasp/install:/home/ubuntu/lidar_scan/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/.local/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'ja_JP.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'ja_JP.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '10'), ('AMENT_PREFIX_PATH', '/home/ubuntu/ws/Libero/install/message_info:/home/ubuntu/ws/Libero/install/main:/home/ubuntu/ws/SSLRasp/install/rasp:/home/ubuntu/ws/SSLRasp/install/message_info:/home/ubuntu/ws/ydlidar_ros2_driver/install/ydlidar_ros2_driver:/home/ubuntu/lidar_scan/install/robo_exp:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ja_JP.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ja_JP.UTF-8'), ('LC_IDENTIFICATION', 'ja_JP.UTF-8'), ('PWD', '/home/ubuntu/ws/Libero/build/message_info'), ('OPENCR_PORT', '/dev/ttyACM0'), ('TURTLEBOT3_MODEL', 'burger'), ('SSH_CONNECTION', '192.168.0.175 35310 192.168.0.193 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages:/home/ubuntu/ws/Libero/install/main/lib/python3.8/site-packages:/home/ubuntu/ws/SSLRasp/install/rasp/lib/python3.8/site-packages:/home/ubuntu/ws/SSLRasp/install/message_info/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ja_JP.UTF-8'), ('LC_PAPER', 'ja_JP.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/ws/Libero/install/message_info:/home/ubuntu/ws/SSLRasp/install/message_info:/home/ubuntu/ws/ydlidar_ros2_driver/install/ydlidar_ros2_driver:/home/ubuntu/lidar_scan/install/robo_exp:/home/ubuntu/ws/Libero/install/main:/home/ubuntu/ws/SSLRasp/install/rasp:/opt/ros/foxy'), ('OPENCR_MODEL', 'burger')]), 'shell': False}
+[3.098060] (message_info) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.098781] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/ament_index/resource_index/rosidl_interfaces/message_info\n'}
+[3.099317] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info\n'}
+[3.099744] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg\n'}
+[3.100137] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/robot_command.h\n'}
+[3.100572] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail\n'}
+[3.100962] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_commands__functions.c\n'}
+[3.101420] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_command__functions.h\n'}
+[3.101931] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/real_commands__type_support.h\n'}
+[3.102372] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_command__functions.c\n'}
+[3.102756] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_command__type_support.h\n'}
+[3.103182] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/real_commands__struct.h\n'}
+[3.103619] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_commands__functions.h\n'}
+[3.104105] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_commands__type_support.h\n'}
+[3.104540] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_command__struct.h\n'}
+[3.104960] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/real_commands__functions.c\n'}
+[3.105319] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_commands__struct.h\n'}
+[3.105703] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/real_commands__functions.h\n'}
+[3.106035] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.106478] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/real_commands.h\n'}
+[3.106809] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/robot_commands.h\n'}
+[3.107153] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/environment/library_path.sh\n'}
+[3.107577] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/environment/library_path.dsv\n'}
+[3.107989] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/lib/libmessage_info__rosidl_generator_c.so\n'}
+[3.108382] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info\n'}
+[3.108771] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg\n'}
+[3.109196] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail\n'}
+[3.109643] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/real_commands__rosidl_typesupport_fastrtps_c.h\n'}
+[3.110011] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_command__rosidl_typesupport_fastrtps_c.h\n'}
+[3.110321] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_commands__rosidl_typesupport_fastrtps_c.h\n'}
+[3.110627] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.111087] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/lib/libmessage_info__rosidl_typesupport_fastrtps_c.so\n'}
+[3.112379] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info\n'}
+[3.112862] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg\n'}
+[3.113254] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail\n'}
+[3.113745] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/real_commands__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.114083] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/dds_fastrtps\n'}
+[3.114543] (-) TimerEvent: {}
+[3.115057] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.115543] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_commands__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.115877] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.116348] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/lib/libmessage_info__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.117762] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info\n'}
+[3.118334] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg\n'}
+[3.118754] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail\n'}
+[3.119149] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_command__rosidl_typesupport_introspection_c.h\n'}
+[3.119531] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_command__type_support.c\n'}
+[3.119959] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_commands__type_support.c\n'}
+[3.120340] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/real_commands__rosidl_typesupport_introspection_c.h\n'}
+[3.120715] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/real_commands__type_support.c\n'}
+[3.121138] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_commands__rosidl_typesupport_introspection_c.h\n'}
+[3.121517] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.122209] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/lib/libmessage_info__rosidl_typesupport_introspection_c.so\n'}
+[3.124304] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/lib/libmessage_info__rosidl_typesupport_c.so\n'}
+[3.125623] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info\n'}
+[3.126180] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg\n'}
+[3.126653] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/real_commands.hpp\n'}
+[3.127072] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail\n'}
+[3.127498] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_command__struct.hpp\n'}
+[3.127880] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_commands__traits.hpp\n'}
+[3.128306] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_command__traits.hpp\n'}
+[3.128718] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_commands__struct.hpp\n'}
+[3.129089] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/real_commands__traits.hpp\n'}
+[3.129575] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_command__builder.hpp\n'}
+[3.130015] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/real_commands__builder.hpp\n'}
+[3.130417] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_commands__builder.hpp\n'}
+[3.130799] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/real_commands__struct.hpp\n'}
+[3.131182] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/robot_commands.hpp\n'}
+[3.131646] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/robot_command.hpp\n'}
+[3.132017] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info\n'}
+[3.132440] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg\n'}
+[3.132787] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail\n'}
+[3.133105] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.133457] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/real_commands__type_support.cpp\n'}
+[3.133820] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_commands__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.134243] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/real_commands__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.134563] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_commands__type_support.cpp\n'}
+[3.134856] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/include/message_info/msg/detail/robot_command__type_support.cpp\n'}
+[3.135169] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/lib/libmessage_info__rosidl_typesupport_introspection_cpp.so\n'}
+[3.136108] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/lib/libmessage_info__rosidl_typesupport_cpp.so\n'}
+[3.137368] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/environment/pythonpath.sh\n'}
+[3.137897] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/environment/pythonpath.dsv\n'}
+[3.138395] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages/message_info/__init__.py\n'}
+[3.214710] (-) TimerEvent: {}
+[3.302726] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages/message_info/msg\n'}
+[3.303341] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages/message_info/msg/_robot_commands.py\n'}
+[3.303857] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages/message_info/msg/_robot_command.py\n'}
+[3.304245] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages/message_info/msg/__init__.py\n'}
+[3.304692] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages/message_info/msg/_robot_commands_s.c\n'}
+[3.305053] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages/message_info/msg/_real_commands_s.c\n'}
+[3.305373] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages/message_info/msg/_real_commands.py\n'}
+[3.305749] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages/message_info/msg/_robot_command_s.c\n'}
+[3.306406] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages/message_info/message_info_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[3.309371] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages/message_info/message_info_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[3.312317] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/lib/python3.8/site-packages/message_info/message_info_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[3.314720] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/lib/libmessage_info__python.so\n'}
+[3.315159] (-) TimerEvent: {}
+[3.316111] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/msg/RobotCommand.idl\n'}
+[3.316660] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/msg/RobotCommands.idl\n'}
+[3.317109] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/msg/RealCommands.idl\n'}
+[3.317580] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/msg/RobotCommand.msg\n'}
+[3.318189] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/msg/RobotCommands.msg\n'}
+[3.318764] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/msg/RealCommands.msg\n'}
+[3.319197] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/ament_index/resource_index/package_run_dependencies/message_info\n'}
+[3.319612] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/ament_index/resource_index/parent_prefix_path/message_info\n'}
+[3.320092] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/environment/ament_prefix_path.sh\n'}
+[3.320498] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/environment/ament_prefix_path.dsv\n'}
+[3.320938] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/environment/path.sh\n'}
+[3.321359] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/environment/path.dsv\n'}
+[3.321845] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/local_setup.bash\n'}
+[3.322279] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/local_setup.sh\n'}
+[3.322709] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/local_setup.zsh\n'}
+[3.323119] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/local_setup.dsv\n'}
+[3.323535] (message_info) StdoutLine: {'line': b'-- Installing: /home/ubuntu/ws/Libero/install/message_info/share/message_info/package.dsv\n'}
+[3.324552] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/ament_index/resource_index/packages/message_info\n'}
+[3.325555] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/message_info__rosidl_generator_cExport.cmake\n'}
+[3.326107] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/message_info__rosidl_generator_cExport-noconfig.cmake\n'}
+[3.327136] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/message_info__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.327642] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/message_info__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[3.328598] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/message_info__rosidl_typesupport_cExport.cmake\n'}
+[3.329101] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/message_info__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[3.330072] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/message_info__rosidl_generator_cppExport.cmake\n'}
+[3.331089] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/message_info__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.331592] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/message_info__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[3.332717] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/message_info__rosidl_typesupport_cppExport.cmake\n'}
+[3.333215] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/message_info__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[3.333712] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/rosidl_cmake-extras.cmake\n'}
+[3.334194] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.334626] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.335103] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.335628] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.336123] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[3.336547] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[3.336965] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/message_infoConfig.cmake\n'}
+[3.337405] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/cmake/message_infoConfig-version.cmake\n'}
+[3.337880] (message_info) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/ws/Libero/install/message_info/share/message_info/package.xml\n'}
+[3.343984] (message_info) CommandEnded: {'returncode': 0}
+[3.415451] (-) TimerEvent: {}
+[3.516363] (-) TimerEvent: {}
+[3.616995] (-) TimerEvent: {}
+[3.717761] (-) TimerEvent: {}
+[3.818495] (-) TimerEvent: {}
+[3.919242] (-) TimerEvent: {}
+[4.023236] (-) TimerEvent: {}
+[4.074223] (message_info) JobEnded: {'identifier': 'message_info', 'rc': 0}
+[4.077140] (-) EventReactorShutdown: {}

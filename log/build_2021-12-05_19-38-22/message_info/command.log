@@ -1,0 +1,2 @@
+Invoking command in '/home/ubuntu/ws/Libero/build/message_info': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ws/Libero/install/main:/home/ubuntu/ws/SSLRasp/install/rasp:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ws/Libero/build/message_info -- -j4 -l4
+Invoked command in '/home/ubuntu/ws/Libero/build/message_info' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ws/Libero/install/main:/home/ubuntu/ws/SSLRasp/install/rasp:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ws/Libero/build/message_info -- -j4 -l4

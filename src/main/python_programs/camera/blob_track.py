@@ -1,20 +1,23 @@
+
 #!/usr/bin/env python3
 # coding: UTF-8
 
 import cv2
 import numpy as np
 import math
-
+import time
 class Camera:
     def __init__(self):
-        self.LOW_COLOR = np.array([0, 68, 176])
-        self.HIGH_COLOR = np.array([179, 255, 255])
+        self.LOW_COLOR = np.array([0, 59, 171])
+        self.HIGH_COLOR = np.array([7, 206, 255])
         self.wide = 0
         self.AREA_RATIO_THRESHOLD = 0.005
         self.appear = False
+        self.pos = []
         # webカメラを扱うオブジェクトを取得
         self.degree_ball_robot = 0.0
         self.cap = cv2.VideoCapture(0, cv2.CAP_V4L2)
+        self.cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc('H', '2', '6', '4'));
 
     def capture(self):
         if(self.cap.isOpened()):
@@ -24,24 +27,25 @@ class Camera:
                 print("cannot read image")
 
             # 位置を抽出
-            pos = self.find_specific_color(
+            self.pos = self.find_specific_color(
                 frame,
                 self.AREA_RATIO_THRESHOLD,
                 self.LOW_COLOR,
                 self.HIGH_COLOR
             )
             
-            if pos is not None:
+            if self.pos is not None:
                 # 抽出した座標に丸を描く
-                cv2.circle(frame,pos,10,(0,0,255),-1)
+                cv2.circle(frame,self.pos,10,(0,0,255),-1)
                 #print(pos[0])
-                self.degree_ball_robot = ((self.wide / 2) - pos[0]) / ((self.wide / 2) / 31.1)
+                self.degree_ball_robot = ((self.wide / 2) - self.pos[0]) / ((self.wide / 2) / 31.1)
                 #print(self.degree_ball_robot)
             else:
                 self.degree_ball_robot = 1000.0
+     
             # 画面に表示する
             #cv2.imshow('frame',frame)
-
+          
             # キーボード入力待ち
             key = cv2.waitKey(1) & 0xFF
 
@@ -50,6 +54,7 @@ class Camera:
             #    break
         
         else:
+            print("Sayounara")
             self.cap.release()
             cv2.destroyAllWindows()
 

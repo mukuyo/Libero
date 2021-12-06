@@ -1,0 +1,20 @@
+[1.096s] Invoking command in '/home/ubuntu/ws/Libero/build/message_info': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ws/Libero/install/main:/home/ubuntu/ws/SSLRasp/install/rasp:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ws/Libero/build/message_info -- -j4 -l4
+[1.372s] [  2%] Built target message_info__cpp
+[1.395s] [ 12%] Built target message_info__rosidl_generator_c
+[1.567s] [ 23%] Built target message_info__rosidl_typesupport_introspection_c
+[1.591s] [ 34%] Built target message_info__rosidl_typesupport_introspection_cpp
+[1.594s] [ 44%] Built target message_info__rosidl_typesupport_cpp
+[1.624s] [ 55%] Built target message_info__rosidl_typesupport_fastrtps_cpp
+[1.718s] [ 65%] Built target message_info__rosidl_typesupport_c
+[1.804s] [ 76%] Built target message_info__rosidl_typesupport_fastrtps_c
+[1.907s] [ 76%] Built target message_info
+[2.013s] [ 78%] Built target message_info__py
+[2.179s] [ 87%] Built target message_info__python
+[2.202s] make[2]: *** [CMakeFiles/message_info__rosidl_typesupport_introspection_c__pyext.dir/build.make:134: CMakeFiles/message_info__rosidl_typesupport_introspection_c__pyext.dir/depend] Interrupt
+[2.202s] make[1]: *** [CMakeFiles/Makefile2:156: CMakeFiles/message_info__rosidl_typesupport_introspection_c__pyext.dir/all] Interrupt
+[2.212s] make[2]: *** [CMakeFiles/message_info__rosidl_typesupport_c__pyext.dir/build.make:133: CMakeFiles/message_info__rosidl_typesupport_c__pyext.dir/depend] Interrupt
+[2.214s] make[1]: *** [CMakeFiles/Makefile2:124: CMakeFiles/message_info__rosidl_typesupport_c__pyext.dir/all] Interrupt
+[2.216s] make[2]: *** [CMakeFiles/message_info__rosidl_typesupport_fastrtps_c__pyext.dir/build.make:153: CMakeFiles/message_info__rosidl_typesupport_fastrtps_c__pyext.dir/depend] Interrupt
+[2.238s] make[1]: *** [CMakeFiles/Makefile2:189: CMakeFiles/message_info__rosidl_typesupport_fastrtps_c__pyext.dir/all] Interrupt
+[2.243s] make: *** [Makefile:141: all] Interrupt
+[2.259s] Invoked command in '/home/ubuntu/ws/Libero/build/message_info' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ws/Libero/install/main:/home/ubuntu/ws/SSLRasp/install/rasp:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/ws/Libero/build/message_info -- -j4 -l4
