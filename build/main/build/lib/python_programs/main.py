@@ -73,7 +73,8 @@ class RealSender(Node):
         self.first_imu = False
     
     def camera_callback(self):
-        self.camera.capture()
+        j=0
+        #self.camera.capture()
 
     def timer_callback(self):
         position_degree = 0.0
