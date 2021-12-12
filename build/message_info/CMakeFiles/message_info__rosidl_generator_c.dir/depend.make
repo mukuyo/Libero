@@ -27,3 +27,9 @@ CMakeFiles/message_info__rosidl_generator_c.dir/rosidl_generator_c/message_info/
 CMakeFiles/message_info__rosidl_generator_c.dir/rosidl_generator_c/message_info/msg/detail/robot_commands__functions.c.o: rosidl_generator_c/message_info/msg/detail/robot_commands__struct.h
 CMakeFiles/message_info__rosidl_generator_c.dir/rosidl_generator_c/message_info/msg/detail/robot_commands__functions.c.o: rosidl_generator_c/message_info/msg/rosidl_generator_c__visibility_control.h
 
+CMakeFiles/message_info__rosidl_generator_c.dir/rosidl_generator_c/message_info/msg/detail/slave__functions.c.o: rosidl_generator_c/message_info/msg/detail/slave__functions.c
+CMakeFiles/message_info__rosidl_generator_c.dir/rosidl_generator_c/message_info/msg/detail/slave__functions.c.o: /opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
+CMakeFiles/message_info__rosidl_generator_c.dir/rosidl_generator_c/message_info/msg/detail/slave__functions.c.o: rosidl_generator_c/message_info/msg/detail/slave__functions.h
+CMakeFiles/message_info__rosidl_generator_c.dir/rosidl_generator_c/message_info/msg/detail/slave__functions.c.o: rosidl_generator_c/message_info/msg/detail/slave__struct.h
+CMakeFiles/message_info__rosidl_generator_c.dir/rosidl_generator_c/message_info/msg/detail/slave__functions.c.o: rosidl_generator_c/message_info/msg/rosidl_generator_c__visibility_control.h
+

@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/message_info/msg/_robot_command_s.c"
   "../rosidl_generator_py/message_info/msg/_robot_commands.py"
   "../rosidl_generator_py/message_info/msg/_robot_commands_s.c"
+  "../rosidl_generator_py/message_info/msg/_slave.py"
+  "../rosidl_generator_py/message_info/msg/_slave_s.c"
   "CMakeFiles/message_info__py"
 )
 

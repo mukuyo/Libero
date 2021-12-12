@@ -108,4 +108,7 @@ CMakeFiles/message_info__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generat
  rosidl_generator_c/message_info/msg/detail/robot_commands__functions.h
  rosidl_generator_c/message_info/msg/detail/robot_commands__struct.h
  rosidl_generator_c/message_info/msg/detail/robot_commands__type_support.h
+ rosidl_generator_c/message_info/msg/detail/slave__functions.h
+ rosidl_generator_c/message_info/msg/detail/slave__struct.h
+ rosidl_generator_c/message_info/msg/detail/slave__type_support.h
  rosidl_generator_c/message_info/msg/rosidl_generator_c__visibility_control.h

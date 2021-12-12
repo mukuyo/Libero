@@ -96,11 +96,25 @@ CMakeFiles/message_info__python.dir/rosidl_generator_py/message_info/msg/_real_c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/message_info__python.dir/rosidl_generator_py/message_info/msg/_real_commands_s.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ws/Libero/build/message_info/rosidl_generator_py/message_info/msg/_real_commands_s.c -o CMakeFiles/message_info__python.dir/rosidl_generator_py/message_info/msg/_real_commands_s.c.s
 
+CMakeFiles/message_info__python.dir/rosidl_generator_py/message_info/msg/_slave_s.c.o: CMakeFiles/message_info__python.dir/flags.make
+CMakeFiles/message_info__python.dir/rosidl_generator_py/message_info/msg/_slave_s.c.o: rosidl_generator_py/message_info/msg/_slave_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ws/Libero/build/message_info/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/message_info__python.dir/rosidl_generator_py/message_info/msg/_slave_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/message_info__python.dir/rosidl_generator_py/message_info/msg/_slave_s.c.o   -c /home/ubuntu/ws/Libero/build/message_info/rosidl_generator_py/message_info/msg/_slave_s.c
+
+CMakeFiles/message_info__python.dir/rosidl_generator_py/message_info/msg/_slave_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/message_info__python.dir/rosidl_generator_py/message_info/msg/_slave_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ubuntu/ws/Libero/build/message_info/rosidl_generator_py/message_info/msg/_slave_s.c > CMakeFiles/message_info__python.dir/rosidl_generator_py/message_info/msg/_slave_s.c.i
+
+CMakeFiles/message_info__python.dir/rosidl_generator_py/message_info/msg/_slave_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/message_info__python.dir/rosidl_generator_py/message_info/msg/_slave_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ws/Libero/build/message_info/rosidl_generator_py/message_info/msg/_slave_s.c -o CMakeFiles/message_info__python.dir/rosidl_generator_py/message_info/msg/_slave_s.c.s
+
 # Object files for target message_info__python
 message_info__python_OBJECTS = \
 "CMakeFiles/message_info__python.dir/rosidl_generator_py/message_info/msg/_robot_command_s.c.o" \
 "CMakeFiles/message_info__python.dir/rosidl_generator_py/message_info/msg/_robot_commands_s.c.o" \
-"CMakeFiles/message_info__python.dir/rosidl_generator_py/message_info/msg/_real_commands_s.c.o"
+"CMakeFiles/message_info__python.dir/rosidl_generator_py/message_info/msg/_real_commands_s.c.o" \
+"CMakeFiles/message_info__python.dir/rosidl_generator_py/message_info/msg/_slave_s.c.o"
 
 # External object files for target message_info__python
 message_info__python_EXTERNAL_OBJECTS =
@@ -108,6 +122,7 @@ message_info__python_EXTERNAL_OBJECTS =
 rosidl_generator_py/message_info/libmessage_info__python.so: CMakeFiles/message_info__python.dir/rosidl_generator_py/message_info/msg/_robot_command_s.c.o
 rosidl_generator_py/message_info/libmessage_info__python.so: CMakeFiles/message_info__python.dir/rosidl_generator_py/message_info/msg/_robot_commands_s.c.o
 rosidl_generator_py/message_info/libmessage_info__python.so: CMakeFiles/message_info__python.dir/rosidl_generator_py/message_info/msg/_real_commands_s.c.o
+rosidl_generator_py/message_info/libmessage_info__python.so: CMakeFiles/message_info__python.dir/rosidl_generator_py/message_info/msg/_slave_s.c.o
 rosidl_generator_py/message_info/libmessage_info__python.so: CMakeFiles/message_info__python.dir/build.make
 rosidl_generator_py/message_info/libmessage_info__python.so: libmessage_info__rosidl_generator_c.so
 rosidl_generator_py/message_info/libmessage_info__python.so: /usr/lib/aarch64-linux-gnu/libpython3.8.so
@@ -144,7 +159,7 @@ rosidl_generator_py/message_info/libmessage_info__python.so: /opt/ros/foxy/lib/l
 rosidl_generator_py/message_info/libmessage_info__python.so: /opt/ros/foxy/lib/librcpputils.so
 rosidl_generator_py/message_info/libmessage_info__python.so: /opt/ros/foxy/lib/librcutils.so
 rosidl_generator_py/message_info/libmessage_info__python.so: CMakeFiles/message_info__python.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/ws/Libero/build/message_info/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library rosidl_generator_py/message_info/libmessage_info__python.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/ws/Libero/build/message_info/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library rosidl_generator_py/message_info/libmessage_info__python.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/message_info__python.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

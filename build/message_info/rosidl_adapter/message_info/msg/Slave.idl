@@ -1,0 +1,30 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from message_info/msg/Slave.msg
+// generated code does not contain a copyright notice
+
+
+module message_info {
+  module msg {
+    struct Slave {
+      double imu_degree;
+
+      int64 appear;
+
+      int64 camera_degree;
+
+      double lidar_degree;
+
+      int64 find;
+
+      int64 touch;
+
+      double left;
+
+      double right;
+
+      int64 decide;
+
+      int64 imu;
+    };
+  };
+};

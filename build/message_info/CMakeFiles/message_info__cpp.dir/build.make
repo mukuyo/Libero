@@ -65,6 +65,10 @@ CMakeFiles/message_info__cpp: rosidl_generator_cpp/message_info/msg/real_command
 CMakeFiles/message_info__cpp: rosidl_generator_cpp/message_info/msg/detail/real_commands__builder.hpp
 CMakeFiles/message_info__cpp: rosidl_generator_cpp/message_info/msg/detail/real_commands__struct.hpp
 CMakeFiles/message_info__cpp: rosidl_generator_cpp/message_info/msg/detail/real_commands__traits.hpp
+CMakeFiles/message_info__cpp: rosidl_generator_cpp/message_info/msg/slave.hpp
+CMakeFiles/message_info__cpp: rosidl_generator_cpp/message_info/msg/detail/slave__builder.hpp
+CMakeFiles/message_info__cpp: rosidl_generator_cpp/message_info/msg/detail/slave__struct.hpp
+CMakeFiles/message_info__cpp: rosidl_generator_cpp/message_info/msg/detail/slave__traits.hpp
 
 
 rosidl_generator_cpp/message_info/msg/robot_command.hpp: /opt/ros/foxy/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -85,6 +89,7 @@ rosidl_generator_cpp/message_info/msg/robot_command.hpp: /opt/ros/foxy/share/ros
 rosidl_generator_cpp/message_info/msg/robot_command.hpp: rosidl_adapter/message_info/msg/RobotCommand.idl
 rosidl_generator_cpp/message_info/msg/robot_command.hpp: rosidl_adapter/message_info/msg/RobotCommands.idl
 rosidl_generator_cpp/message_info/msg/robot_command.hpp: rosidl_adapter/message_info/msg/RealCommands.idl
+rosidl_generator_cpp/message_info/msg/robot_command.hpp: rosidl_adapter/message_info/msg/Slave.idl
 rosidl_generator_cpp/message_info/msg/robot_command.hpp: /opt/ros/foxy/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_cpp/message_info/msg/robot_command.hpp: /opt/ros/foxy/share/builtin_interfaces/msg/Time.idl
 rosidl_generator_cpp/message_info/msg/robot_command.hpp: /opt/ros/foxy/share/std_msgs/msg/Bool.idl
@@ -210,6 +215,18 @@ rosidl_generator_cpp/message_info/msg/detail/real_commands__struct.hpp: rosidl_g
 rosidl_generator_cpp/message_info/msg/detail/real_commands__traits.hpp: rosidl_generator_cpp/message_info/msg/robot_command.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/message_info/msg/detail/real_commands__traits.hpp
 
+rosidl_generator_cpp/message_info/msg/slave.hpp: rosidl_generator_cpp/message_info/msg/robot_command.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/message_info/msg/slave.hpp
+
+rosidl_generator_cpp/message_info/msg/detail/slave__builder.hpp: rosidl_generator_cpp/message_info/msg/robot_command.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/message_info/msg/detail/slave__builder.hpp
+
+rosidl_generator_cpp/message_info/msg/detail/slave__struct.hpp: rosidl_generator_cpp/message_info/msg/robot_command.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/message_info/msg/detail/slave__struct.hpp
+
+rosidl_generator_cpp/message_info/msg/detail/slave__traits.hpp: rosidl_generator_cpp/message_info/msg/robot_command.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/message_info/msg/detail/slave__traits.hpp
+
 message_info__cpp: CMakeFiles/message_info__cpp
 message_info__cpp: rosidl_generator_cpp/message_info/msg/robot_command.hpp
 message_info__cpp: rosidl_generator_cpp/message_info/msg/detail/robot_command__builder.hpp
@@ -223,6 +240,10 @@ message_info__cpp: rosidl_generator_cpp/message_info/msg/real_commands.hpp
 message_info__cpp: rosidl_generator_cpp/message_info/msg/detail/real_commands__builder.hpp
 message_info__cpp: rosidl_generator_cpp/message_info/msg/detail/real_commands__struct.hpp
 message_info__cpp: rosidl_generator_cpp/message_info/msg/detail/real_commands__traits.hpp
+message_info__cpp: rosidl_generator_cpp/message_info/msg/slave.hpp
+message_info__cpp: rosidl_generator_cpp/message_info/msg/detail/slave__builder.hpp
+message_info__cpp: rosidl_generator_cpp/message_info/msg/detail/slave__struct.hpp
+message_info__cpp: rosidl_generator_cpp/message_info/msg/detail/slave__traits.hpp
 message_info__cpp: CMakeFiles/message_info__cpp.dir/build.make
 
 .PHONY : message_info__cpp

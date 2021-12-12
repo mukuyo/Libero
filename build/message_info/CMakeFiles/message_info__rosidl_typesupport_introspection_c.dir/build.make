@@ -68,6 +68,7 @@ rosidl_typesupport_introspection_c/message_info/msg/detail/robot_command__rosidl
 rosidl_typesupport_introspection_c/message_info/msg/detail/robot_command__rosidl_typesupport_introspection_c.h: rosidl_adapter/message_info/msg/RobotCommand.idl
 rosidl_typesupport_introspection_c/message_info/msg/detail/robot_command__rosidl_typesupport_introspection_c.h: rosidl_adapter/message_info/msg/RobotCommands.idl
 rosidl_typesupport_introspection_c/message_info/msg/detail/robot_command__rosidl_typesupport_introspection_c.h: rosidl_adapter/message_info/msg/RealCommands.idl
+rosidl_typesupport_introspection_c/message_info/msg/detail/robot_command__rosidl_typesupport_introspection_c.h: rosidl_adapter/message_info/msg/Slave.idl
 rosidl_typesupport_introspection_c/message_info/msg/detail/robot_command__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/builtin_interfaces/msg/Duration.idl
 rosidl_typesupport_introspection_c/message_info/msg/detail/robot_command__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/builtin_interfaces/msg/Time.idl
 rosidl_typesupport_introspection_c/message_info/msg/detail/robot_command__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/std_msgs/msg/Bool.idl
@@ -166,6 +167,9 @@ rosidl_typesupport_introspection_c/message_info/msg/detail/robot_commands__rosid
 rosidl_typesupport_introspection_c/message_info/msg/detail/real_commands__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/message_info/msg/detail/robot_command__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/message_info/msg/detail/real_commands__rosidl_typesupport_introspection_c.h
 
+rosidl_typesupport_introspection_c/message_info/msg/detail/slave__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/message_info/msg/detail/robot_command__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/message_info/msg/detail/slave__rosidl_typesupport_introspection_c.h
+
 rosidl_typesupport_introspection_c/message_info/msg/detail/robot_command__type_support.c: rosidl_typesupport_introspection_c/message_info/msg/detail/robot_command__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/message_info/msg/detail/robot_command__type_support.c
 
@@ -174,6 +178,9 @@ rosidl_typesupport_introspection_c/message_info/msg/detail/robot_commands__type_
 
 rosidl_typesupport_introspection_c/message_info/msg/detail/real_commands__type_support.c: rosidl_typesupport_introspection_c/message_info/msg/detail/robot_command__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/message_info/msg/detail/real_commands__type_support.c
+
+rosidl_typesupport_introspection_c/message_info/msg/detail/slave__type_support.c: rosidl_typesupport_introspection_c/message_info/msg/detail/robot_command__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/message_info/msg/detail/slave__type_support.c
 
 CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/message_info/msg/detail/robot_command__type_support.c.o: CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/message_info/msg/detail/robot_command__type_support.c.o: rosidl_typesupport_introspection_c/message_info/msg/detail/robot_command__type_support.c
@@ -214,11 +221,25 @@ CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/rosidl_typesuppo
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/message_info/msg/detail/real_commands__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_introspection_c/message_info/msg/detail/real_commands__type_support.c -o CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/message_info/msg/detail/real_commands__type_support.c.s
 
+CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/message_info/msg/detail/slave__type_support.c.o: CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/message_info/msg/detail/slave__type_support.c.o: rosidl_typesupport_introspection_c/message_info/msg/detail/slave__type_support.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ws/Libero/build/message_info/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/message_info/msg/detail/slave__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/message_info/msg/detail/slave__type_support.c.o   -c /home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_introspection_c/message_info/msg/detail/slave__type_support.c
+
+CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/message_info/msg/detail/slave__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/message_info/msg/detail/slave__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_introspection_c/message_info/msg/detail/slave__type_support.c > CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/message_info/msg/detail/slave__type_support.c.i
+
+CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/message_info/msg/detail/slave__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/message_info/msg/detail/slave__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_introspection_c/message_info/msg/detail/slave__type_support.c -o CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/message_info/msg/detail/slave__type_support.c.s
+
 # Object files for target message_info__rosidl_typesupport_introspection_c
 message_info__rosidl_typesupport_introspection_c_OBJECTS = \
 "CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/message_info/msg/detail/robot_command__type_support.c.o" \
 "CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/message_info/msg/detail/robot_commands__type_support.c.o" \
-"CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/message_info/msg/detail/real_commands__type_support.c.o"
+"CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/message_info/msg/detail/real_commands__type_support.c.o" \
+"CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/message_info/msg/detail/slave__type_support.c.o"
 
 # External object files for target message_info__rosidl_typesupport_introspection_c
 message_info__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
@@ -226,6 +247,7 @@ message_info__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
 libmessage_info__rosidl_typesupport_introspection_c.so: CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/message_info/msg/detail/robot_command__type_support.c.o
 libmessage_info__rosidl_typesupport_introspection_c.so: CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/message_info/msg/detail/robot_commands__type_support.c.o
 libmessage_info__rosidl_typesupport_introspection_c.so: CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/message_info/msg/detail/real_commands__type_support.c.o
+libmessage_info__rosidl_typesupport_introspection_c.so: CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/message_info/msg/detail/slave__type_support.c.o
 libmessage_info__rosidl_typesupport_introspection_c.so: CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/build.make
 libmessage_info__rosidl_typesupport_introspection_c.so: libmessage_info__rosidl_generator_c.so
 libmessage_info__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_c.so
@@ -256,7 +278,7 @@ libmessage_info__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/lib/librcp
 libmessage_info__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/lib/librosidl_runtime_c.so
 libmessage_info__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/lib/librcutils.so
 libmessage_info__rosidl_typesupport_introspection_c.so: CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/ws/Libero/build/message_info/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libmessage_info__rosidl_typesupport_introspection_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/ws/Libero/build/message_info/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared library libmessage_info__rosidl_typesupport_introspection_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -271,9 +293,11 @@ CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/clean:
 CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/message_info/msg/detail/robot_command__rosidl_typesupport_introspection_c.h
 CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/message_info/msg/detail/robot_commands__rosidl_typesupport_introspection_c.h
 CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/message_info/msg/detail/real_commands__rosidl_typesupport_introspection_c.h
+CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/message_info/msg/detail/slave__rosidl_typesupport_introspection_c.h
 CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/message_info/msg/detail/robot_command__type_support.c
 CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/message_info/msg/detail/robot_commands__type_support.c
 CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/message_info/msg/detail/real_commands__type_support.c
+CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/message_info/msg/detail/slave__type_support.c
 	cd /home/ubuntu/ws/Libero/build/message_info && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/ws/Libero/src/message_info /home/ubuntu/ws/Libero/src/message_info /home/ubuntu/ws/Libero/build/message_info /home/ubuntu/ws/Libero/build/message_info /home/ubuntu/ws/Libero/build/message_info/CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/message_info__rosidl_typesupport_introspection_c.dir/depend
 

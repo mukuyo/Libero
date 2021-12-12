@@ -14,6 +14,8 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_py/message_info/msg/_robot_command_s.c" "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_py/message_info/_message_info_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_py/message_info/msg/_robot_commands.py" "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_py/message_info/_message_info_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_py/message_info/msg/_robot_commands_s.c" "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_py/message_info/_message_info_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_py/message_info/msg/_slave.py" "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_py/message_info/_message_info_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_py/message_info/msg/_slave_s.c" "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_py/message_info/_message_info_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 
 

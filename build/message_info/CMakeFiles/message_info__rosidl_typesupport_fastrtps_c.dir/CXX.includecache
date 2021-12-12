@@ -82,6 +82,30 @@ message_info/msg/detail/robot_command__functions.h
 std_msgs/msg/detail/header__functions.h
 /home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_fastrtps_c/message_info/msg/detail/std_msgs/msg/detail/header__functions.h
 
+/home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_fastrtps_c/message_info/msg/detail/slave__type_support_c.cpp
+message_info/msg/detail/slave__rosidl_typesupport_fastrtps_c.h
+/home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_fastrtps_c/message_info/msg/detail/message_info/msg/detail/slave__rosidl_typesupport_fastrtps_c.h
+cassert
+-
+limits
+-
+string
+-
+rosidl_typesupport_fastrtps_c/identifier.h
+/home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_fastrtps_c/message_info/msg/detail/rosidl_typesupport_fastrtps_c/identifier.h
+rosidl_typesupport_fastrtps_c/wstring_conversion.hpp
+/home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_fastrtps_c/message_info/msg/detail/rosidl_typesupport_fastrtps_c/wstring_conversion.hpp
+rosidl_typesupport_fastrtps_cpp/message_type_support.h
+/home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_fastrtps_c/message_info/msg/detail/rosidl_typesupport_fastrtps_cpp/message_type_support.h
+message_info/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+/home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_fastrtps_c/message_info/msg/detail/message_info/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+message_info/msg/detail/slave__struct.h
+/home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_fastrtps_c/message_info/msg/detail/message_info/msg/detail/slave__struct.h
+message_info/msg/detail/slave__functions.h
+/home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_fastrtps_c/message_info/msg/detail/message_info/msg/detail/slave__functions.h
+fastcdr/Cdr.h
+/home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_fastrtps_c/message_info/msg/detail/fastcdr/Cdr.h
+
 /opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.h
 stdbool.h
 -
@@ -290,6 +314,26 @@ rosidl_generator_c/message_info/msg/detail/std_msgs/msg/detail/header__struct.h
 message_info/msg/detail/robot_command__struct.h
 rosidl_generator_c/message_info/msg/detail/message_info/msg/detail/robot_command__struct.h
 
+rosidl_generator_c/message_info/msg/detail/slave__functions.h
+stdbool.h
+-
+stdlib.h
+-
+rosidl_runtime_c/visibility_control.h
+rosidl_generator_c/message_info/msg/detail/rosidl_runtime_c/visibility_control.h
+message_info/msg/rosidl_generator_c__visibility_control.h
+rosidl_generator_c/message_info/msg/detail/message_info/msg/rosidl_generator_c__visibility_control.h
+message_info/msg/detail/slave__struct.h
+rosidl_generator_c/message_info/msg/detail/message_info/msg/detail/slave__struct.h
+
+rosidl_generator_c/message_info/msg/detail/slave__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+
 rosidl_generator_c/message_info/msg/rosidl_generator_c__visibility_control.h
 
 rosidl_typesupport_fastrtps_c/message_info/msg/detail/real_commands__rosidl_typesupport_fastrtps_c.h
@@ -313,6 +357,16 @@ message_info/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
 rosidl_typesupport_fastrtps_c/message_info/msg/detail/message_info/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
 
 rosidl_typesupport_fastrtps_c/message_info/msg/detail/robot_commands__rosidl_typesupport_fastrtps_c.h
+stddef.h
+-
+rosidl_runtime_c/message_type_support_struct.h
+rosidl_typesupport_fastrtps_c/message_info/msg/detail/rosidl_runtime_c/message_type_support_struct.h
+rosidl_typesupport_interface/macros.h
+rosidl_typesupport_fastrtps_c/message_info/msg/detail/rosidl_typesupport_interface/macros.h
+message_info/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+rosidl_typesupport_fastrtps_c/message_info/msg/detail/message_info/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+
+rosidl_typesupport_fastrtps_c/message_info/msg/detail/slave__rosidl_typesupport_fastrtps_c.h
 stddef.h
 -
 rosidl_runtime_c/message_type_support_struct.h

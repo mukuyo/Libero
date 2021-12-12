@@ -56,6 +56,7 @@ set(msg_files
   "msg/RobotCommand.msg"
   "msg/RobotCommands.msg"
   "msg/RealCommands.msg"
+  "msg/Slave.msg"
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}

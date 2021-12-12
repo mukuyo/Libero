@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 # coding: UTF-8
 
@@ -19,7 +18,7 @@ import rclpy
 import concurrent.futures
 
 from rclpy.node import Node
-from message_info.msg import RobotCommands, RealCommands
+from message_info.msg import RobotCommands, RealCommands, Slave
 from geometry_msgs.msg import Twist, PointStamped
 from sensor_msgs.msg import LaserScan
 from rclpy.qos import qos_profile_sensor_data
@@ -37,13 +36,10 @@ class RealSender(Node):
         GPIO.setup(20,GPIO.OUT)
         GPIO.setup(21,GPIO.OUT)
         GPIO.setup(27, GPIO.OUT)
-        #GPIO.setup(2, GPIO.IN, pull_up_down=GPIO.PUD_UP)
         GPIO.setup(2, GPIO.IN)
-        #GPIO.add_event_detect(2, GPIO.RISING,callback=self.ser_callback, bouncetime=100)
         self.ser = serial.Serial("/dev/ttyACM0", 115200, timeout=0.5)
         self.time_period = 0.016
         self.create_timer(self.time_period, self.timer_callback)
-        self.create_timer(0.016, self.camera_callback)
         self.sub_commands = self.create_subscription(
                 PointStamped,
                 'clicked_point',
@@ -59,8 +55,11 @@ class RealSender(Node):
         self.pub_odom = self.create_publisher(
                 Odometry,
                 "odom", 10)
+        self.pub_slave = self.create_publisher(
+                Slave,
+                "slave", 10)
         self.M = [0, 0]
-        self.distance = 0
+        self.distance = 0.0
         self.low =0
         self.high =0
         self.target_distance = 0
@@ -79,11 +78,14 @@ class RealSender(Node):
         self.touch_flag_2 = 0
         self.touch_flag_3 = 0
         self.first_imu = False
-        self.val1 = 0
+        self.val1 = 0.0
+        self.val2 = 0.0
         self.teleop_flag = 0
         self.pow_x = 0
-        self.pow_y =0
+        self.pow_y = 0
         GPIO.output(27,0)
+        self.slave = Slave()
+        self.avoid_flag = False
         print("START")
         executor = concurrent.futures.ThreadPoolExecutor(max_workers=2)
         executor.submit(self.ser_callback)
@@ -93,29 +95,15 @@ class RealSender(Node):
         while True:
             result1 = self.ser.read()
             result2 = self.ser.read()
-            val1 = int.from_bytes(result1, byteorder='big')
-            val2 = int.from_bytes(result2, byteorder='big')
-               
-    def camera_callback(self):
-        j=0
-        #head = self.ser.read(1)
-        #result1 = self.ser.read()
-        #result2 = self.ser.read()
-        #val1 = int.from_bytes(result1, byteorder='big')
-        #val2 = int.from_bytes(result2, byteorder='big')
-        #print(val1)
-        #print(bytes.fromhex(result))
-        #self.camera.capture()
-        #str = self.ser.readline()
-        #print(str.strip().decode('utf-8'))
+            self.val1 = int.from_bytes(result1, byteorder='big')
+            self.val2 = int.from_bytes(result2, byteorder='big')
+            #print(self.val1+self.val2*256) 
+            
     def timer_callback(self):
-        #print(self.val1)
         position_degree = 0.0
         packet = bytearray()
         packet.append(0xFF)
-        #self.camera.capture()
         self.switch.get()
-        
         self.touch_count = 0
         counter = -1
         for i in self.switch.sensor_values:
@@ -246,6 +234,20 @@ class RealSender(Node):
         print(self.decide, end = " ")
         print(position_degree)
         """
+        self.slave.imu_degree = self.val1+self.val2*256.0
+        self.slave.appear = self.camera.appear
+        if self.camera.appear == True:
+            self.slave.camera_degree = -(self.camera.pos[0] - 310) / 4
+        else:
+            self.slave.camera_degree = 0
+        self.slave.lidar_degree = float(self.distance)
+        self.slave.find = self.avoid_flag
+        self.slave.touch = self.touch_count
+        self.slave.left = float(self.left_power)
+        self.slave.right = float(self.right_power)
+        self.slave.decide = self.decide
+        self.slave.imu = self.imu
+        self.pub_slave.publish(self.slave)
 
     def teleop_callback(self, msg):
         self.teleop_flag = True
@@ -315,21 +317,23 @@ class RealSender(Node):
             self.degree_min = self.degree_min - 360 
         #if self.camera.appear == True and self.target_distance < 10:
         #    self.camera.appear = False
-
+        
         if self.distance < 10 and not(self.touch_count) == 3 and self.first_imu == False:
         #if self.distance < 5:
             if self.camera.appear == True:
-                GPIO.output(7, 0)
+                self.avoid_flag = False
+                GPIO.output(27, 0)
                 self.imu = True
                 self.left_power = self.target_distance
                 self.right_power = self.target_distance
             else:
                 print("avoid")
-                GPIO.output(7, 1)
+                GPIO.output(27, 1)
                 self.imu = False
                 self.avoid_func()
         else:
-            GPIO.output(7, 0)
+            self.avoid_flag = False
+            GPIO.output(27, 0)
             self.imu = True
             self.left_power = distance_temp
             self.right_power = distance_temp
@@ -338,7 +342,7 @@ class RealSender(Node):
         #self.right_power = self.target_distance
     def avoid_func(self):
         self.imu = False
-            
+        self.avoid_flag = True
         if abs(self.degree_min) < 90:
             self.left_power = abs(70 - abs(self.degree_min))
             if abs(self.left_power) > 20:
@@ -366,7 +370,7 @@ class RealSender(Node):
             self.decide = True
         
     def stop(self):
-        GPIO.output(7,0)
+        GPIO.output(27,0)
         for i in range(5):
             packet = bytearray()
             packet.append(0xFF)
@@ -389,4 +393,3 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-
