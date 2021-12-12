@@ -16,6 +16,7 @@ import cv2
 import numpy as np
 import math
 import rclpy
+import concurrent.futures
 
 from rclpy.node import Node
 from message_info.msg import RobotCommands, RealCommands
@@ -35,10 +36,10 @@ class RealSender(Node):
         GPIO.setup(16,GPIO.OUT)
         GPIO.setup(20,GPIO.OUT)
         GPIO.setup(21,GPIO.OUT)
-        GPIO.setup(7, GPIO.OUT)
+        GPIO.setup(27, GPIO.OUT)
         #GPIO.setup(2, GPIO.IN, pull_up_down=GPIO.PUD_UP)
         GPIO.setup(2, GPIO.IN)
-        GPIO.add_event_detect(2, GPIO.RISING,callback=self.ser_callback, bouncetime=100)
+        #GPIO.add_event_detect(2, GPIO.RISING,callback=self.ser_callback, bouncetime=100)
         self.ser = serial.Serial("/dev/ttyACM0", 115200, timeout=0.5)
         self.time_period = 0.016
         self.create_timer(self.time_period, self.timer_callback)
@@ -82,13 +83,19 @@ class RealSender(Node):
         self.teleop_flag = 0
         self.pow_x = 0
         self.pow_y =0
-        GPIO.output(7,0)
+        GPIO.output(27,0)
         print("START")
+        executor = concurrent.futures.ThreadPoolExecutor(max_workers=2)
+        executor.submit(self.ser_callback)
+        executor.submit(self.camera.get)
 
-    def ser_callback(self, channel):
-        result1 = self.ser.read()
-        self.val1 = int.from_bytes(result1, byteorder='big')
-    
+    def ser_callback(self):
+        while True:
+            result1 = self.ser.read()
+            result2 = self.ser.read()
+            val1 = int.from_bytes(result1, byteorder='big')
+            val2 = int.from_bytes(result2, byteorder='big')
+               
     def camera_callback(self):
         j=0
         #head = self.ser.read(1)
@@ -106,7 +113,7 @@ class RealSender(Node):
         position_degree = 0.0
         packet = bytearray()
         packet.append(0xFF)
-        self.camera.capture()
+        #self.camera.capture()
         self.switch.get()
         
         self.touch_count = 0
@@ -137,11 +144,11 @@ class RealSender(Node):
                    self.start = 0
                 #self.scan_count = 0
         if self.touch[6] == True:
-            GPIO.output(20,1)
+            GPIO.output(20,0)
         if self.touch[13] == True:
-            GPIO.output(16, 1)
+            GPIO.output(16,0)
         if self.touch[19] == True:
-            GPIO.output(21, 1)
+            GPIO.output(21,0)
 
         if self.touch_count > 0  and self.start == 0:
             self.decide = False
@@ -181,7 +188,7 @@ class RealSender(Node):
         packet.append(self.low)
         packet.append(self.high)
         #self.decide = False
-        if self.touch_count == 3 and self.scan_count == 2:
+        if self.touch_count == 3:
            self.decide = False
            self.imu = True
            self.scan_count = 0
@@ -191,6 +198,9 @@ class RealSender(Node):
 
         if self.scan_count == 1:
             self.imu = True
+        #elif self.scan_count == 2:
+        #    self.decide = True
+
         if self.teleop_flag == True:
             self.decide = True
             self.imu = False
@@ -218,15 +228,16 @@ class RealSender(Node):
         """
         print(self.left_power, end=' ')
         print(self.right_power, end=' ')
-        print(self.target_distance, end = " ")
+        print(self.distance, end = " ")
         print(position_degree, end = " ")
         print(self.imu, end = " ")
         print(self.decide, end = " ")
-        print(self.scan_count, end = " ")
+        print(self.camera.appear, end = " ")
         print(position_degree)
         """
-        
+       
         """
+        print(self.distance, end="")
         #print(self.target_degree, end=' ')
         print(self.touch_count, end=' ')
         print(self.first_imu, end = " ")
@@ -235,6 +246,7 @@ class RealSender(Node):
         print(self.decide, end = " ")
         print(position_degree)
         """
+
     def teleop_callback(self, msg):
         self.teleop_flag = True
         if not(msg.linear.x) == 0:
@@ -256,9 +268,9 @@ class RealSender(Node):
 
     def scan_callback(self, msg):
         if self.scan_count == 0:
-            GPIO.output(16, 0)
-            GPIO.output(20, 0)
-            GPIO.output(21, 0)
+            GPIO.output(16, 1)
+            GPIO.output(20, 1)
+            GPIO.output(21, 1)
         self.distance = 0
         target_distance_min = 10000.0
         distance_min = 10000.0
@@ -278,22 +290,22 @@ class RealSender(Node):
                 self.distance = data
                 self.degree_min = degree_one * count + 180
 
-        self.target_distance = self.target_distance*100 - 40
+        self.target_distance = self.target_distance*100 - 50
         self.distance = self.distance*100 - 50
-        distance_temp = self.distance
+        distance_temp = self.distance 
         
-        if self.distance > 80:
-            self.distance = 80
+        if self.distance > 50:
+            self.distance = 50
         elif self.distance < 0:
             self.distance = 0
         
-        if distance_temp > 80:
-            distance_temp = 80
-        elif distance_temp < 40:
-            distance_temp =40
+        if distance_temp > 50:
+            distance_temp = 50
+        elif distance_temp < 10:
+            distance_temp =10
         
-        if self.target_distance > 60:
-            self.target_distance = 60
+        if self.target_distance > 50:
+            self.target_distance = 50
         elif self.target_distance < 0:
             self.target_distance = 0
         
@@ -301,8 +313,10 @@ class RealSender(Node):
             self.degree_min = self.degree_min -360
         if self.degree_min > 180:
             self.degree_min = self.degree_min - 360 
-        
-        if self.distance < 5 and not(self.touch_count) == 3 and self.first_imu == False:
+        #if self.camera.appear == True and self.target_distance < 10:
+        #    self.camera.appear = False
+
+        if self.distance < 10 and not(self.touch_count) == 3 and self.first_imu == False:
         #if self.distance < 5:
             if self.camera.appear == True:
                 GPIO.output(7, 0)
@@ -310,6 +324,7 @@ class RealSender(Node):
                 self.left_power = self.target_distance
                 self.right_power = self.target_distance
             else:
+                print("avoid")
                 GPIO.output(7, 1)
                 self.imu = False
                 self.avoid_func()
@@ -318,7 +333,7 @@ class RealSender(Node):
             self.imu = True
             self.left_power = distance_temp
             self.right_power = distance_temp
-        
+        #self.imu = True
         #self.left_power = self.target_distance
         #self.right_power = self.target_distance
     def avoid_func(self):
@@ -328,10 +343,12 @@ class RealSender(Node):
             self.left_power = abs(70 - abs(self.degree_min))
             if abs(self.left_power) > 20:
                self.left_power = 0.0
+            elif abs(self.left_power) < 12:
+               self.left_power = 12
 
-            self.right_power = 70
+            self.right_power = 40
         else:
-            self.left_power = 70
+            self.left_power = 40
             #self.right_power = 20
             self.right_power = abs(abs(self.degree_min) - 110)
             if abs(self.right_power) > 20:
@@ -349,6 +366,7 @@ class RealSender(Node):
             self.decide = True
         
     def stop(self):
+        GPIO.output(7,0)
         for i in range(5):
             packet = bytearray()
             packet.append(0xFF)

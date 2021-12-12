@@ -19,6 +19,10 @@ class Camera:
         self.cap = cv2.VideoCapture(0, cv2.CAP_V4L2)
         self.cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc('H', '2', '6', '4'));
 
+    def get(self):
+        while(True):
+            self.capture()
+
     def capture(self):
         if(self.cap.isOpened()):
             ret,frame = self.cap.read()
@@ -57,7 +61,7 @@ class Camera:
             #    break
         
         else:
-            print("Sayounara")
+            #print("Sayounara")
             self.cap.release()
             cv2.destroyAllWindows()
 
