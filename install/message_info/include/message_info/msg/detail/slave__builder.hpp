@@ -20,16 +20,64 @@ namespace msg
 namespace builder
 {
 
+class Init_Slave_sw3
+{
+public:
+  explicit Init_Slave_sw3(::message_info::msg::Slave & msg)
+  : msg_(msg)
+  {}
+  ::message_info::msg::Slave sw3(::message_info::msg::Slave::_sw3_type arg)
+  {
+    msg_.sw3 = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::message_info::msg::Slave msg_;
+};
+
+class Init_Slave_sw2
+{
+public:
+  explicit Init_Slave_sw2(::message_info::msg::Slave & msg)
+  : msg_(msg)
+  {}
+  Init_Slave_sw3 sw2(::message_info::msg::Slave::_sw2_type arg)
+  {
+    msg_.sw2 = std::move(arg);
+    return Init_Slave_sw3(msg_);
+  }
+
+private:
+  ::message_info::msg::Slave msg_;
+};
+
+class Init_Slave_sw1
+{
+public:
+  explicit Init_Slave_sw1(::message_info::msg::Slave & msg)
+  : msg_(msg)
+  {}
+  Init_Slave_sw2 sw1(::message_info::msg::Slave::_sw1_type arg)
+  {
+    msg_.sw1 = std::move(arg);
+    return Init_Slave_sw2(msg_);
+  }
+
+private:
+  ::message_info::msg::Slave msg_;
+};
+
 class Init_Slave_imu
 {
 public:
   explicit Init_Slave_imu(::message_info::msg::Slave & msg)
   : msg_(msg)
   {}
-  ::message_info::msg::Slave imu(::message_info::msg::Slave::_imu_type arg)
+  Init_Slave_sw1 imu(::message_info::msg::Slave::_imu_type arg)
   {
     msg_.imu = std::move(arg);
-    return std::move(msg_);
+    return Init_Slave_sw1(msg_);
   }
 
 private:

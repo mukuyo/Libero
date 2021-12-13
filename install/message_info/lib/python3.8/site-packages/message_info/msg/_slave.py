@@ -63,6 +63,9 @@ class Slave(metaclass=Metaclass_Slave):
         '_right',
         '_decide',
         '_imu',
+        '_sw1',
+        '_sw2',
+        '_sw3',
     ]
 
     _fields_and_field_types = {
@@ -76,6 +79,9 @@ class Slave(metaclass=Metaclass_Slave):
         'right': 'double',
         'decide': 'int64',
         'imu': 'int64',
+        'sw1': 'int64',
+        'sw2': 'int64',
+        'sw3': 'int64',
     }
 
     SLOT_TYPES = (
@@ -87,6 +93,9 @@ class Slave(metaclass=Metaclass_Slave):
         rosidl_parser.definition.BasicType('int64'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int64'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int64'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int64'),  # noqa: E501
         rosidl_parser.definition.BasicType('int64'),  # noqa: E501
         rosidl_parser.definition.BasicType('int64'),  # noqa: E501
     )
@@ -105,6 +114,9 @@ class Slave(metaclass=Metaclass_Slave):
         self.right = kwargs.get('right', float())
         self.decide = kwargs.get('decide', int())
         self.imu = kwargs.get('imu', int())
+        self.sw1 = kwargs.get('sw1', int())
+        self.sw2 = kwargs.get('sw2', int())
+        self.sw3 = kwargs.get('sw3', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -154,6 +166,12 @@ class Slave(metaclass=Metaclass_Slave):
         if self.decide != other.decide:
             return False
         if self.imu != other.imu:
+            return False
+        if self.sw1 != other.sw1:
+            return False
+        if self.sw2 != other.sw2:
+            return False
+        if self.sw3 != other.sw3:
             return False
         return True
 
@@ -303,3 +321,48 @@ class Slave(metaclass=Metaclass_Slave):
             assert value >= -9223372036854775808 and value < 9223372036854775808, \
                 "The 'imu' field must be an integer in [-9223372036854775808, 9223372036854775807]"
         self._imu = value
+
+    @property
+    def sw1(self):
+        """Message field 'sw1'."""
+        return self._sw1
+
+    @sw1.setter
+    def sw1(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'sw1' field must be of type 'int'"
+            assert value >= -9223372036854775808 and value < 9223372036854775808, \
+                "The 'sw1' field must be an integer in [-9223372036854775808, 9223372036854775807]"
+        self._sw1 = value
+
+    @property
+    def sw2(self):
+        """Message field 'sw2'."""
+        return self._sw2
+
+    @sw2.setter
+    def sw2(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'sw2' field must be of type 'int'"
+            assert value >= -9223372036854775808 and value < 9223372036854775808, \
+                "The 'sw2' field must be an integer in [-9223372036854775808, 9223372036854775807]"
+        self._sw2 = value
+
+    @property
+    def sw3(self):
+        """Message field 'sw3'."""
+        return self._sw3
+
+    @sw3.setter
+    def sw3(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'sw3' field must be of type 'int'"
+            assert value >= -9223372036854775808 and value < 9223372036854775808, \
+                "The 'sw3' field must be an integer in [-9223372036854775808, 9223372036854775807]"
+        self._sw3 = value

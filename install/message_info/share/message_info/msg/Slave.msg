@@ -8,3 +8,6 @@ float64 left
 float64 right
 int64 decide
 int64 imu
+int64 sw1
+int64 sw2
+int64 sw3

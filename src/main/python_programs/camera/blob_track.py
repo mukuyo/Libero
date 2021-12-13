@@ -1,13 +1,14 @@
 
 #!/usr/bin/env python3
 # coding: UTF-8
-
+import main
 import cv2
 import numpy as np
 import math
 import time
-class Camera:
+class Camera(RealSender):
     def __init__(self):
+        super().__init__()
         self.LOW_COLOR = np.array([0, 109, 118])
         self.HIGH_COLOR = np.array([10, 198, 216])
         self.wide = 0
@@ -20,8 +21,9 @@ class Camera:
         self.cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc('H', '2', '6', '4'));
 
     def get(self):
-        while(True):
-            self.capture()
+        j=0
+        #while(True):
+        #   self.capture()
 
     def capture(self):
         if(self.cap.isOpened()):
@@ -46,7 +48,7 @@ class Camera:
                 #print(self.degree_ball_robot)
             else:
                 self.degree_ball_robot = 1000.0
-     
+            print(self.appear)
             # 画面に表示する
             #cv2.imshow('frame',frame)
           
@@ -61,7 +63,7 @@ class Camera:
             #    break
         
         else:
-            #print("Sayounara")
+            print("Sayounara")
             self.cap.release()
             cv2.destroyAllWindows()
 

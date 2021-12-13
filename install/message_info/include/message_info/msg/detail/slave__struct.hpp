@@ -47,6 +47,9 @@ struct Slave_
       this->right = 0.0;
       this->decide = 0ll;
       this->imu = 0ll;
+      this->sw1 = 0ll;
+      this->sw2 = 0ll;
+      this->sw3 = 0ll;
     }
   }
 
@@ -66,6 +69,9 @@ struct Slave_
       this->right = 0.0;
       this->decide = 0ll;
       this->imu = 0ll;
+      this->sw1 = 0ll;
+      this->sw2 = 0ll;
+      this->sw3 = 0ll;
     }
   }
 
@@ -100,6 +106,15 @@ struct Slave_
   using _imu_type =
     int64_t;
   _imu_type imu;
+  using _sw1_type =
+    int64_t;
+  _sw1_type sw1;
+  using _sw2_type =
+    int64_t;
+  _sw2_type sw2;
+  using _sw3_type =
+    int64_t;
+  _sw3_type sw3;
 
   // setters for named parameter idiom
   Type & set__imu_degree(
@@ -160,6 +175,24 @@ struct Slave_
     const int64_t & _arg)
   {
     this->imu = _arg;
+    return *this;
+  }
+  Type & set__sw1(
+    const int64_t & _arg)
+  {
+    this->sw1 = _arg;
+    return *this;
+  }
+  Type & set__sw2(
+    const int64_t & _arg)
+  {
+    this->sw2 = _arg;
+    return *this;
+  }
+  Type & set__sw3(
+    const int64_t & _arg)
+  {
+    this->sw3 = _arg;
     return *this;
   }
 
@@ -233,6 +266,15 @@ struct Slave_
       return false;
     }
     if (this->imu != other.imu) {
+      return false;
+    }
+    if (this->sw1 != other.sw1) {
+      return false;
+    }
+    if (this->sw2 != other.sw2) {
+      return false;
+    }
+    if (this->sw3 != other.sw3) {
       return false;
     }
     return true;

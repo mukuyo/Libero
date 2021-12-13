@@ -37,7 +37,7 @@ void Slave_fini_function(void * message_memory)
   typed_message->~Slave();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Slave_message_member_array[10] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Slave_message_member_array[13] = {
   {
     "imu_degree",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
@@ -187,13 +187,58 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Slave_message
     nullptr,  // get_const(index) function pointer
     nullptr,  // get(index) function pointer
     nullptr  // resize(index) function pointer
+  },
+  {
+    "sw1",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT64,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(message_info::msg::Slave, sw1),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "sw2",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT64,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(message_info::msg::Slave, sw2),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "sw3",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT64,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(message_info::msg::Slave, sw3),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Slave_message_members = {
   "message_info::msg",  // message namespace
   "Slave",  // message name
-  10,  // number of fields
+  13,  // number of fields
   sizeof(message_info::msg::Slave),
   Slave_message_member_array,  // message members
   Slave_init_function,  // function to initialize message memory (memory has to be allocated)

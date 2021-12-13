@@ -30,6 +30,9 @@ typedef struct message_info__msg__Slave
   double right;
   int64_t decide;
   int64_t imu;
+  int64_t sw1;
+  int64_t sw2;
+  int64_t sw3;
 } message_info__msg__Slave;
 
 // Struct for a sequence of message_info__msg__Slave.

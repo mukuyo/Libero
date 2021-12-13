@@ -25,6 +25,12 @@ module message_info {
       int64 decide;
 
       int64 imu;
+
+      int64 sw1;
+
+      int64 sw2;
+
+      int64 sw3;
     };
   };
 };

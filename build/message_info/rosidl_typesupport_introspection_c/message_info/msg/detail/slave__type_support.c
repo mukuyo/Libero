@@ -31,7 +31,7 @@ void Slave__rosidl_typesupport_introspection_c__Slave_fini_function(void * messa
   message_info__msg__Slave__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember Slave__rosidl_typesupport_introspection_c__Slave_message_member_array[10] = {
+static rosidl_typesupport_introspection_c__MessageMember Slave__rosidl_typesupport_introspection_c__Slave_message_member_array[13] = {
   {
     "imu_degree",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
@@ -181,13 +181,58 @@ static rosidl_typesupport_introspection_c__MessageMember Slave__rosidl_typesuppo
     NULL,  // get_const(index) function pointer
     NULL,  // get(index) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "sw1",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT64,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(message_info__msg__Slave, sw1),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "sw2",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT64,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(message_info__msg__Slave, sw2),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "sw3",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT64,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(message_info__msg__Slave, sw3),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers Slave__rosidl_typesupport_introspection_c__Slave_message_members = {
   "message_info__msg",  // message namespace
   "Slave",  // message name
-  10,  // number of fields
+  13,  // number of fields
   sizeof(message_info__msg__Slave),
   Slave__rosidl_typesupport_introspection_c__Slave_message_member_array,  // message members
   Slave__rosidl_typesupport_introspection_c__Slave_init_function,  // function to initialize message memory (memory has to be allocated)

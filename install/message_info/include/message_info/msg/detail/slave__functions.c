@@ -25,6 +25,9 @@ message_info__msg__Slave__init(message_info__msg__Slave * msg)
   // right
   // decide
   // imu
+  // sw1
+  // sw2
+  // sw3
   return true;
 }
 
@@ -44,6 +47,9 @@ message_info__msg__Slave__fini(message_info__msg__Slave * msg)
   // right
   // decide
   // imu
+  // sw1
+  // sw2
+  // sw3
 }
 
 message_info__msg__Slave *

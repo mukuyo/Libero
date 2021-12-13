@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # coding: UTF-8
 
-from .camera import blob_track
+#from .camera import blob_track
 from .switch import limit_switch
 
 import math
@@ -20,7 +20,7 @@ import concurrent.futures
 from rclpy.node import Node
 from message_info.msg import RobotCommands, RealCommands, Slave
 from geometry_msgs.msg import Twist, PointStamped
-from sensor_msgs.msg import LaserScan
+from sensor_msgs.msg import LaserScan, Joy
 from rclpy.qos import qos_profile_sensor_data
 from nav_msgs.msg import Odometry
 GPIO.setwarnings(False)
@@ -28,7 +28,17 @@ GPIO.setwarnings(False)
 class RealSender(Node):
     def __init__(self):
         super().__init__('receiver')
-        self.camera = blob_track.Camera()
+        self.LOW_COLOR = np.array([0, 102, 163])
+        self.HIGH_COLOR = np.array([179, 174, 255])
+        self.wide = 0
+        self.AREA_RATIO_THRESHOLD = 0.005
+        self.appear = False
+        self.pos = []
+        # webカメラを扱うオブジェクトを取得
+        self.degree_ball_robot = 0.0
+        self.cap = cv2.VideoCapture(0, cv2.CAP_V4L2)
+        self.cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc('H', '2', '6', '4'));
+       #self.camera = blob_track.Camera()
         self.switch = limit_switch.Switch()
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(26,GPIO.OUT)
@@ -52,6 +62,10 @@ class RealSender(Node):
                 LaserScan,
                 "scan",
                 self.scan_callback, qos_profile_sensor_data)
+        self.sub_joy = self.create_subscription(
+                Joy,
+                "joy",
+                self.joy_callback, qos_profile_sensor_data)
         self.pub_odom = self.create_publisher(
                 Odometry,
                 "odom", 10)
@@ -89,21 +103,117 @@ class RealSender(Node):
         print("START")
         executor = concurrent.futures.ThreadPoolExecutor(max_workers=2)
         executor.submit(self.ser_callback)
-        executor.submit(self.camera.get)
+        executor.submit(self.get)
+
+    def get(self):
+        while(True):
+            self.capture()
+
+    def capture(self):
+        if(self.cap.isOpened()):
+            ret,frame = self.cap.read()
+
+            if ret is False:
+                print("cannot read image")
+
+            # 位置を抽出
+            self.pos = self.find_specific_color(
+                frame,
+                self.AREA_RATIO_THRESHOLD,
+                self.LOW_COLOR,
+                self.HIGH_COLOR
+            )
+            
+            if self.pos is not None:
+                # 抽出した座標に丸を描く
+                cv2.circle(frame,self.pos,10,(0,0,255),-1)
+                #print(pos[0])
+                self.degree_ball_robot = ((self.wide / 2) - self.pos[0]) / ((self.wide / 2) / 31.1)
+                #print(self.degree_ball_robot)
+            else:
+                self.degree_ball_robot = 1000.0
+            #print(self.appear)     
+            # 画面に表示する
+            #cv2.imshow('frame',frame)
+          
+            # キーボード入力待ち
+            #cv2.imshow('img_final', img_final)
+            #cv2.waitKey(0)
+            key = cv2.waitKey(1) & 0xFF
+            #cv2.destroyAllWindows()
+
+            # qが押された場合は終了する
+            #if key == ord('q'):
+            #    break
+        
+        else:
+            #print("Sayounara")
+            self.cap.release()
+            cv2.destroyAllWindows()
+
+    def find_specific_color(self,frame,AREA_RATIO_THRESHOLD,LOW_COLOR,HIGH_COLOR):
+
+        # 高さ，幅，チャンネル数
+        h,w,c = frame.shape
+        self.wide = w
+        #print(h)
+        # h = 480, w =  640find_specific_color
+        # hsv色空間に変換
+        hsv = cv2.cvtColor(frame,cv2.COLOR_BGR2HSV)
+    
+        # 色を抽出する
+        ex_img = cv2.inRange(hsv,LOW_COLOR,HIGH_COLOR)
+
+        # 輪郭抽出
+        contours,hierarchy = cv2.findContours(ex_img,cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)
+    
+        # 面積を計算
+        areas = np.array(list(map(cv2.contourArea,contours)))
+
+        if len(areas) == 0 or np.max(areas) / (h*w) < AREA_RATIO_THRESHOLD:
+            # 見つからなかったらNoneを返す
+            #print("the area is too small")
+            self.appear = False
+            return None
+        else:
+            self.appear = True
+            # 面積が最大の塊の重心を計算し返す
+            max_idx = np.argmax(areas)
+            max_area = areas[max_idx]
+            result = cv2.moments(contours[max_idx])
+            x = int(result["m10"]/result["m00"])
+            y = int(result["m01"]/result["m00"])
+            return (x,y)
 
     def ser_callback(self):
         while True:
-            result1 = self.ser.read()
-            result2 = self.ser.read()
-            self.val1 = int.from_bytes(result1, byteorder='big')
-            self.val2 = int.from_bytes(result2, byteorder='big')
-            #print(self.val1+self.val2*256) 
-            
+            temp = self.ser.read()
+            temp = int.from_bytes(temp, byteorder='big')
+            if temp == 0xFF:
+                result1 = self.ser.read()
+                result2 = self.ser.read()
+                self.val1 = int.from_bytes(result1, byteorder='big')
+                self.val2 = int.from_bytes(result2, byteorder='big')
+                #print(self.val1+self.val2*256) 
+    def joy_callback(self,msg):
+        self.teleop_flag = True
+        msg.axes[1] = msg.axes[1] * 80
+        msg.axes[4] = msg.axes[4] * 80
+        if msg.axes[1] < 0:
+            msg.axes[1] = -msg.axes[1] + 100.0
+        if msg.axes[4] < 0:
+            msg.axes[4] = -msg.axes[4] + 100.0
+        self.pow_x = msg.axes[1]
+        self.pow_y = msg.axes[4]
+        print(self.pow_x, self.pow_y)
+
+        #print(msg.axes[2], msg.axes[3], msg.axes[4])           
     def timer_callback(self):
         position_degree = 0.0
         packet = bytearray()
         packet.append(0xFF)
         self.switch.get()
+        #self.capture()
         self.touch_count = 0
         counter = -1
         for i in self.switch.sensor_values:
@@ -112,6 +222,7 @@ class RealSender(Node):
                 self.touch[counter] = -1
                 self.decide = False
                 self.imu = False
+                
             if self.touch[counter] == -1 and i == False:
                 self.touch[counter] = 1
                 self.imu = True
@@ -150,12 +261,12 @@ class RealSender(Node):
                 #camera_flag = True
         #if camera_flag == True and self.camera.appear == True:
         #    self.camera.appear
-        if self.camera.appear == False or self.decide == False or self.first_imu == True:
-            target_degree_calc = self.target_degree + (125 * self.touch_count)
+        if self.appear == False or self.decide == False or self.first_imu == True:
+            target_degree_calc = self.target_degree + (130 * self.touch_count)
             position_degree = target_degree_calc
             #print(target_degree_calc)
         else:
-            position_degree = -(self.camera.pos[0] - 310) / 4
+            position_degree = -(self.pos[0] - 310) / 4
         #if position_degree < -180:
         #    position_degree += 360
         #elif position_degree > 180:
@@ -193,11 +304,12 @@ class RealSender(Node):
             self.decide = True
             self.imu = False
         #self.decide = False
+        #self.imu = False
         if self.decide == False:
             self.distance = 0
             self.left_power = 0
             self.right_power = 0
-            self.camera.appear = False
+            self.appear = False
         
         #print(self.touch_count, end=" ")
         #print()
@@ -211,8 +323,9 @@ class RealSender(Node):
         packet.append(int(self.right_power))
         #self.imu = False
         packet.append(self.imu)
-        packet.append(self.camera.appear)
+        packet.append(self.appear)
         self.ser.write(packet)
+        #print(self.appear)
         """
         print(self.left_power, end=' ')
         print(self.right_power, end=' ')
@@ -235,9 +348,9 @@ class RealSender(Node):
         print(position_degree)
         """
         self.slave.imu_degree = self.val1+self.val2*256.0
-        self.slave.appear = self.camera.appear
-        if self.camera.appear == True:
-            self.slave.camera_degree = -(self.camera.pos[0] - 310) / 4
+        self.slave.appear = self.appear
+        if self.appear == True:
+            self.slave.camera_degree = int(-(self.pos[0] - 310.0) / 4.0)
         else:
             self.slave.camera_degree = 0
         self.slave.lidar_degree = float(self.distance)
@@ -248,7 +361,9 @@ class RealSender(Node):
         self.slave.decide = self.decide
         self.slave.imu = self.imu
         self.pub_slave.publish(self.slave)
-
+        #print(self.appear)
+        #if self.appear==True:
+        #    print(-(self.pos[0] - 310.0) / 4.0)
     def teleop_callback(self, msg):
         self.teleop_flag = True
         if not(msg.linear.x) == 0:
@@ -266,10 +381,10 @@ class RealSender(Node):
         if msg.angular.z == 0 and msg.linear.x == 0:
             self.pow_x=0
             self.pow_y=0
-        print(self.pow_x, self.pow_y)
+        #print(self.pow_x, self.pow_y)
 
     def scan_callback(self, msg):
-        if self.scan_count == 0:
+        if self.scan_count == 1:
             GPIO.output(16, 1)
             GPIO.output(20, 1)
             GPIO.output(21, 1)
@@ -292,22 +407,22 @@ class RealSender(Node):
                 self.distance = data
                 self.degree_min = degree_one * count + 180
 
-        self.target_distance = self.target_distance*100 - 50
+        self.target_distance = self.target_distance*100 - 40
         self.distance = self.distance*100 - 50
         distance_temp = self.distance 
         
-        if self.distance > 50:
-            self.distance = 50
+        if self.distance > 60:
+            self.distance = 60
         elif self.distance < 0:
             self.distance = 0
         
-        if distance_temp > 50:
-            distance_temp = 50
-        elif distance_temp < 10:
-            distance_temp =10
+        if distance_temp > 60:
+            distance_temp = 60
+        elif distance_temp < 20:
+            distance_temp =20
         
-        if self.target_distance > 50:
-            self.target_distance = 50
+        if self.target_distance > 60:
+            self.target_distance = 60
         elif self.target_distance < 0:
             self.target_distance = 0
         
@@ -318,9 +433,9 @@ class RealSender(Node):
         #if self.camera.appear == True and self.target_distance < 10:
         #    self.camera.appear = False
         
-        if self.distance < 10 and not(self.touch_count) == 3 and self.first_imu == False:
+        if self.distance < 5 and not(self.touch_count) == 3 and self.first_imu == False:
         #if self.distance < 5:
-            if self.camera.appear == True:
+            if self.appear == True:
                 self.avoid_flag = False
                 GPIO.output(27, 0)
                 self.imu = True
@@ -328,6 +443,7 @@ class RealSender(Node):
                 self.right_power = self.target_distance
             else:
                 print("avoid")
+                #if self.decide == True:
                 GPIO.output(27, 1)
                 self.imu = False
                 self.avoid_func()
@@ -347,12 +463,12 @@ class RealSender(Node):
             self.left_power = abs(70 - abs(self.degree_min))
             if abs(self.left_power) > 20:
                self.left_power = 0.0
-            elif abs(self.left_power) < 12:
-               self.left_power = 12
+            elif abs(self.left_power) < 20:
+               self.left_power = 20
 
-            self.right_power = 40
+            self.right_power = 60
         else:
-            self.left_power = 40
+            self.left_power = 60
             #self.right_power = 20
             self.right_power = abs(abs(self.degree_min) - 110)
             if abs(self.right_power) > 20:

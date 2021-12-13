@@ -99,6 +99,21 @@ static bool _Slave__cdr_serialize(
     cdr << ros_message->imu;
   }
 
+  // Field name: sw1
+  {
+    cdr << ros_message->sw1;
+  }
+
+  // Field name: sw2
+  {
+    cdr << ros_message->sw2;
+  }
+
+  // Field name: sw3
+  {
+    cdr << ros_message->sw3;
+  }
+
   return true;
 }
 
@@ -159,6 +174,21 @@ static bool _Slave__cdr_deserialize(
   // Field name: imu
   {
     cdr >> ros_message->imu;
+  }
+
+  // Field name: sw1
+  {
+    cdr >> ros_message->sw1;
+  }
+
+  // Field name: sw2
+  {
+    cdr >> ros_message->sw2;
+  }
+
+  // Field name: sw3
+  {
+    cdr >> ros_message->sw3;
   }
 
   return true;
@@ -235,6 +265,24 @@ size_t get_serialized_size_message_info__msg__Slave(
   // field.name imu
   {
     size_t item_size = sizeof(ros_message->imu);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name sw1
+  {
+    size_t item_size = sizeof(ros_message->sw1);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name sw2
+  {
+    size_t item_size = sizeof(ros_message->sw2);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name sw3
+  {
+    size_t item_size = sizeof(ros_message->sw3);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -326,6 +374,27 @@ size_t max_serialized_size_message_info__msg__Slave(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
   // member: imu
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+  // member: sw1
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+  // member: sw2
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+  // member: sw3
   {
     size_t array_size = 1;
 
