@@ -66,6 +66,7 @@ rosidl_typesupport_c/message_info/msg/robot_command__type_support.cpp: /opt/ros/
 rosidl_typesupport_c/message_info/msg/robot_command__type_support.cpp: rosidl_adapter/message_info/msg/RobotCommand.idl
 rosidl_typesupport_c/message_info/msg/robot_command__type_support.cpp: rosidl_adapter/message_info/msg/RobotCommands.idl
 rosidl_typesupport_c/message_info/msg/robot_command__type_support.cpp: rosidl_adapter/message_info/msg/RealCommands.idl
+rosidl_typesupport_c/message_info/msg/robot_command__type_support.cpp: rosidl_adapter/message_info/msg/Slave.idl
 rosidl_typesupport_c/message_info/msg/robot_command__type_support.cpp: /opt/ros/foxy/share/builtin_interfaces/msg/Duration.idl
 rosidl_typesupport_c/message_info/msg/robot_command__type_support.cpp: /opt/ros/foxy/share/builtin_interfaces/msg/Time.idl
 rosidl_typesupport_c/message_info/msg/robot_command__type_support.cpp: /opt/ros/foxy/share/std_msgs/msg/Bool.idl
@@ -164,6 +165,9 @@ rosidl_typesupport_c/message_info/msg/robot_commands__type_support.cpp: rosidl_t
 rosidl_typesupport_c/message_info/msg/real_commands__type_support.cpp: rosidl_typesupport_c/message_info/msg/robot_command__type_support.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_c/message_info/msg/real_commands__type_support.cpp
 
+rosidl_typesupport_c/message_info/msg/slave__type_support.cpp: rosidl_typesupport_c/message_info/msg/robot_command__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_c/message_info/msg/slave__type_support.cpp
+
 CMakeFiles/message_info__rosidl_typesupport_c.dir/rosidl_typesupport_c/message_info/msg/robot_command__type_support.cpp.o: CMakeFiles/message_info__rosidl_typesupport_c.dir/flags.make
 CMakeFiles/message_info__rosidl_typesupport_c.dir/rosidl_typesupport_c/message_info/msg/robot_command__type_support.cpp.o: rosidl_typesupport_c/message_info/msg/robot_command__type_support.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ws/Libero/build/message_info/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/message_info__rosidl_typesupport_c.dir/rosidl_typesupport_c/message_info/msg/robot_command__type_support.cpp.o"
@@ -203,11 +207,25 @@ CMakeFiles/message_info__rosidl_typesupport_c.dir/rosidl_typesupport_c/message_i
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/message_info__rosidl_typesupport_c.dir/rosidl_typesupport_c/message_info/msg/real_commands__type_support.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_c/message_info/msg/real_commands__type_support.cpp -o CMakeFiles/message_info__rosidl_typesupport_c.dir/rosidl_typesupport_c/message_info/msg/real_commands__type_support.cpp.s
 
+CMakeFiles/message_info__rosidl_typesupport_c.dir/rosidl_typesupport_c/message_info/msg/slave__type_support.cpp.o: CMakeFiles/message_info__rosidl_typesupport_c.dir/flags.make
+CMakeFiles/message_info__rosidl_typesupport_c.dir/rosidl_typesupport_c/message_info/msg/slave__type_support.cpp.o: rosidl_typesupport_c/message_info/msg/slave__type_support.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/ws/Libero/build/message_info/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/message_info__rosidl_typesupport_c.dir/rosidl_typesupport_c/message_info/msg/slave__type_support.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/message_info__rosidl_typesupport_c.dir/rosidl_typesupport_c/message_info/msg/slave__type_support.cpp.o -c /home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_c/message_info/msg/slave__type_support.cpp
+
+CMakeFiles/message_info__rosidl_typesupport_c.dir/rosidl_typesupport_c/message_info/msg/slave__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/message_info__rosidl_typesupport_c.dir/rosidl_typesupport_c/message_info/msg/slave__type_support.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_c/message_info/msg/slave__type_support.cpp > CMakeFiles/message_info__rosidl_typesupport_c.dir/rosidl_typesupport_c/message_info/msg/slave__type_support.cpp.i
+
+CMakeFiles/message_info__rosidl_typesupport_c.dir/rosidl_typesupport_c/message_info/msg/slave__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/message_info__rosidl_typesupport_c.dir/rosidl_typesupport_c/message_info/msg/slave__type_support.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_c/message_info/msg/slave__type_support.cpp -o CMakeFiles/message_info__rosidl_typesupport_c.dir/rosidl_typesupport_c/message_info/msg/slave__type_support.cpp.s
+
 # Object files for target message_info__rosidl_typesupport_c
 message_info__rosidl_typesupport_c_OBJECTS = \
 "CMakeFiles/message_info__rosidl_typesupport_c.dir/rosidl_typesupport_c/message_info/msg/robot_command__type_support.cpp.o" \
 "CMakeFiles/message_info__rosidl_typesupport_c.dir/rosidl_typesupport_c/message_info/msg/robot_commands__type_support.cpp.o" \
-"CMakeFiles/message_info__rosidl_typesupport_c.dir/rosidl_typesupport_c/message_info/msg/real_commands__type_support.cpp.o"
+"CMakeFiles/message_info__rosidl_typesupport_c.dir/rosidl_typesupport_c/message_info/msg/real_commands__type_support.cpp.o" \
+"CMakeFiles/message_info__rosidl_typesupport_c.dir/rosidl_typesupport_c/message_info/msg/slave__type_support.cpp.o"
 
 # External object files for target message_info__rosidl_typesupport_c
 message_info__rosidl_typesupport_c_EXTERNAL_OBJECTS =
@@ -215,6 +233,7 @@ message_info__rosidl_typesupport_c_EXTERNAL_OBJECTS =
 libmessage_info__rosidl_typesupport_c.so: CMakeFiles/message_info__rosidl_typesupport_c.dir/rosidl_typesupport_c/message_info/msg/robot_command__type_support.cpp.o
 libmessage_info__rosidl_typesupport_c.so: CMakeFiles/message_info__rosidl_typesupport_c.dir/rosidl_typesupport_c/message_info/msg/robot_commands__type_support.cpp.o
 libmessage_info__rosidl_typesupport_c.so: CMakeFiles/message_info__rosidl_typesupport_c.dir/rosidl_typesupport_c/message_info/msg/real_commands__type_support.cpp.o
+libmessage_info__rosidl_typesupport_c.so: CMakeFiles/message_info__rosidl_typesupport_c.dir/rosidl_typesupport_c/message_info/msg/slave__type_support.cpp.o
 libmessage_info__rosidl_typesupport_c.so: CMakeFiles/message_info__rosidl_typesupport_c.dir/build.make
 libmessage_info__rosidl_typesupport_c.so: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
 libmessage_info__rosidl_typesupport_c.so: /opt/ros/foxy/lib/libsensor_msgs__rosidl_typesupport_c.so
@@ -244,7 +263,7 @@ libmessage_info__rosidl_typesupport_c.so: /opt/ros/foxy/lib/librosidl_runtime_c.
 libmessage_info__rosidl_typesupport_c.so: /opt/ros/foxy/lib/librcpputils.so
 libmessage_info__rosidl_typesupport_c.so: /opt/ros/foxy/lib/librcutils.so
 libmessage_info__rosidl_typesupport_c.so: CMakeFiles/message_info__rosidl_typesupport_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/ws/Libero/build/message_info/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library libmessage_info__rosidl_typesupport_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/ws/Libero/build/message_info/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library libmessage_info__rosidl_typesupport_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/message_info__rosidl_typesupport_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -259,6 +278,7 @@ CMakeFiles/message_info__rosidl_typesupport_c.dir/clean:
 CMakeFiles/message_info__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/message_info/msg/robot_command__type_support.cpp
 CMakeFiles/message_info__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/message_info/msg/robot_commands__type_support.cpp
 CMakeFiles/message_info__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/message_info/msg/real_commands__type_support.cpp
+CMakeFiles/message_info__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/message_info/msg/slave__type_support.cpp
 	cd /home/ubuntu/ws/Libero/build/message_info && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/ws/Libero/src/message_info /home/ubuntu/ws/Libero/src/message_info /home/ubuntu/ws/Libero/build/message_info /home/ubuntu/ws/Libero/build/message_info /home/ubuntu/ws/Libero/build/message_info/CMakeFiles/message_info__rosidl_typesupport_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/message_info__rosidl_typesupport_c.dir/depend
 

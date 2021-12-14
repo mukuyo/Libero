@@ -1,0 +1,13 @@
+float64  imu_degree
+int64 appear
+int64 camera_degree
+float64 lidar_degree
+int64 find
+int64 touch
+float64 left
+float64 right
+int64 decide
+int64 imu
+int64 sw1
+int64 sw2
+int64 sw3

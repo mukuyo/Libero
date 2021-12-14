@@ -59,10 +59,12 @@ message_info__py/CMakeFiles/message_info__py: rosidl_generator_py/message_info/_
 message_info__py/CMakeFiles/message_info__py: rosidl_generator_py/message_info/msg/_robot_command.py
 message_info__py/CMakeFiles/message_info__py: rosidl_generator_py/message_info/msg/_robot_commands.py
 message_info__py/CMakeFiles/message_info__py: rosidl_generator_py/message_info/msg/_real_commands.py
+message_info__py/CMakeFiles/message_info__py: rosidl_generator_py/message_info/msg/_slave.py
 message_info__py/CMakeFiles/message_info__py: rosidl_generator_py/message_info/msg/__init__.py
 message_info__py/CMakeFiles/message_info__py: rosidl_generator_py/message_info/msg/_robot_command_s.c
 message_info__py/CMakeFiles/message_info__py: rosidl_generator_py/message_info/msg/_robot_commands_s.c
 message_info__py/CMakeFiles/message_info__py: rosidl_generator_py/message_info/msg/_real_commands_s.c
+message_info__py/CMakeFiles/message_info__py: rosidl_generator_py/message_info/msg/_slave_s.c
 
 
 rosidl_generator_py/message_info/_message_info_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/lib/rosidl_generator_py/rosidl_generator_py
@@ -81,6 +83,7 @@ rosidl_generator_py/message_info/_message_info_s.ep.rosidl_typesupport_fastrtps_
 rosidl_generator_py/message_info/_message_info_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/message_info/msg/RobotCommand.idl
 rosidl_generator_py/message_info/_message_info_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/message_info/msg/RobotCommands.idl
 rosidl_generator_py/message_info/_message_info_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/message_info/msg/RealCommands.idl
+rosidl_generator_py/message_info/_message_info_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/message_info/msg/Slave.idl
 rosidl_generator_py/message_info/_message_info_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_py/message_info/_message_info_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/builtin_interfaces/msg/Time.idl
 rosidl_generator_py/message_info/_message_info_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/std_msgs/msg/Bool.idl
@@ -188,6 +191,9 @@ rosidl_generator_py/message_info/msg/_robot_commands.py: rosidl_generator_py/mes
 rosidl_generator_py/message_info/msg/_real_commands.py: rosidl_generator_py/message_info/_message_info_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/message_info/msg/_real_commands.py
 
+rosidl_generator_py/message_info/msg/_slave.py: rosidl_generator_py/message_info/_message_info_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/message_info/msg/_slave.py
+
 rosidl_generator_py/message_info/msg/__init__.py: rosidl_generator_py/message_info/_message_info_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/message_info/msg/__init__.py
 
@@ -200,6 +206,9 @@ rosidl_generator_py/message_info/msg/_robot_commands_s.c: rosidl_generator_py/me
 rosidl_generator_py/message_info/msg/_real_commands_s.c: rosidl_generator_py/message_info/_message_info_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/message_info/msg/_real_commands_s.c
 
+rosidl_generator_py/message_info/msg/_slave_s.c: rosidl_generator_py/message_info/_message_info_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/message_info/msg/_slave_s.c
+
 message_info__py: message_info__py/CMakeFiles/message_info__py
 message_info__py: rosidl_generator_py/message_info/_message_info_s.ep.rosidl_typesupport_fastrtps_c.c
 message_info__py: rosidl_generator_py/message_info/_message_info_s.ep.rosidl_typesupport_introspection_c.c
@@ -207,10 +216,12 @@ message_info__py: rosidl_generator_py/message_info/_message_info_s.ep.rosidl_typ
 message_info__py: rosidl_generator_py/message_info/msg/_robot_command.py
 message_info__py: rosidl_generator_py/message_info/msg/_robot_commands.py
 message_info__py: rosidl_generator_py/message_info/msg/_real_commands.py
+message_info__py: rosidl_generator_py/message_info/msg/_slave.py
 message_info__py: rosidl_generator_py/message_info/msg/__init__.py
 message_info__py: rosidl_generator_py/message_info/msg/_robot_command_s.c
 message_info__py: rosidl_generator_py/message_info/msg/_robot_commands_s.c
 message_info__py: rosidl_generator_py/message_info/msg/_real_commands_s.c
+message_info__py: rosidl_generator_py/message_info/msg/_slave_s.c
 message_info__py: message_info__py/CMakeFiles/message_info__py.dir/build.make
 
 .PHONY : message_info__py

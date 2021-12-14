@@ -3,6 +3,7 @@
   "non_idl_tuples": [
     "/home/ubuntu/ws/Libero/src/message_info:msg/RobotCommand.msg",
     "/home/ubuntu/ws/Libero/src/message_info:msg/RobotCommands.msg",
-    "/home/ubuntu/ws/Libero/src/message_info:msg/RealCommands.msg"
+    "/home/ubuntu/ws/Libero/src/message_info:msg/RealCommands.msg",
+    "/home/ubuntu/ws/Libero/src/message_info:msg/Slave.msg"
   ]
 }

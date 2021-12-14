@@ -56,6 +56,7 @@ include CMakeFiles/message_info.dir/progress.make
 CMakeFiles/message_info: /home/ubuntu/ws/Libero/src/message_info/msg/RobotCommand.msg
 CMakeFiles/message_info: /home/ubuntu/ws/Libero/src/message_info/msg/RobotCommands.msg
 CMakeFiles/message_info: /home/ubuntu/ws/Libero/src/message_info/msg/RealCommands.msg
+CMakeFiles/message_info: /home/ubuntu/ws/Libero/src/message_info/msg/Slave.msg
 CMakeFiles/message_info: /opt/ros/foxy/share/builtin_interfaces/msg/Duration.idl
 CMakeFiles/message_info: /opt/ros/foxy/share/builtin_interfaces/msg/Time.idl
 CMakeFiles/message_info: /opt/ros/foxy/share/std_msgs/msg/Bool.idl

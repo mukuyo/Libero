@@ -68,6 +68,24 @@ message_info/msg/robot_command.h
 message_info/msg/detail/robot_command__rosidl_typesupport_introspection_c.h
 /home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_introspection_c/message_info/msg/detail/message_info/msg/detail/robot_command__rosidl_typesupport_introspection_c.h
 
+/home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_introspection_c/message_info/msg/detail/slave__type_support.c
+stddef.h
+-
+message_info/msg/detail/slave__rosidl_typesupport_introspection_c.h
+/home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_introspection_c/message_info/msg/detail/message_info/msg/detail/slave__rosidl_typesupport_introspection_c.h
+message_info/msg/rosidl_typesupport_introspection_c__visibility_control.h
+/home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_introspection_c/message_info/msg/detail/message_info/msg/rosidl_typesupport_introspection_c__visibility_control.h
+rosidl_typesupport_introspection_c/field_types.h
+/home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_introspection_c/message_info/msg/detail/rosidl_typesupport_introspection_c/field_types.h
+rosidl_typesupport_introspection_c/identifier.h
+/home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_introspection_c/message_info/msg/detail/rosidl_typesupport_introspection_c/identifier.h
+rosidl_typesupport_introspection_c/message_introspection.h
+/home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_introspection_c/message_info/msg/detail/rosidl_typesupport_introspection_c/message_introspection.h
+message_info/msg/detail/slave__functions.h
+/home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_introspection_c/message_info/msg/detail/message_info/msg/detail/slave__functions.h
+message_info/msg/detail/slave__struct.h
+/home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_introspection_c/message_info/msg/detail/message_info/msg/detail/slave__struct.h
+
 /opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.h
 stdbool.h
 -
@@ -250,6 +268,26 @@ rosidl_generator_c/message_info/msg/detail/std_msgs/msg/detail/header__struct.h
 message_info/msg/detail/robot_command__struct.h
 rosidl_generator_c/message_info/msg/detail/message_info/msg/detail/robot_command__struct.h
 
+rosidl_generator_c/message_info/msg/detail/slave__functions.h
+stdbool.h
+-
+stdlib.h
+-
+rosidl_runtime_c/visibility_control.h
+rosidl_generator_c/message_info/msg/detail/rosidl_runtime_c/visibility_control.h
+message_info/msg/rosidl_generator_c__visibility_control.h
+rosidl_generator_c/message_info/msg/detail/message_info/msg/rosidl_generator_c__visibility_control.h
+message_info/msg/detail/slave__struct.h
+rosidl_generator_c/message_info/msg/detail/message_info/msg/detail/slave__struct.h
+
+rosidl_generator_c/message_info/msg/detail/slave__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+
 rosidl_generator_c/message_info/msg/robot_command.h
 message_info/msg/detail/robot_command__struct.h
 rosidl_generator_c/message_info/msg/message_info/msg/detail/robot_command__struct.h
@@ -277,6 +315,14 @@ message_info/msg/rosidl_typesupport_introspection_c__visibility_control.h
 rosidl_typesupport_introspection_c/message_info/msg/detail/message_info/msg/rosidl_typesupport_introspection_c__visibility_control.h
 
 rosidl_typesupport_introspection_c/message_info/msg/detail/robot_commands__rosidl_typesupport_introspection_c.h
+rosidl_runtime_c/message_type_support_struct.h
+rosidl_typesupport_introspection_c/message_info/msg/detail/rosidl_runtime_c/message_type_support_struct.h
+rosidl_typesupport_interface/macros.h
+rosidl_typesupport_introspection_c/message_info/msg/detail/rosidl_typesupport_interface/macros.h
+message_info/msg/rosidl_typesupport_introspection_c__visibility_control.h
+rosidl_typesupport_introspection_c/message_info/msg/detail/message_info/msg/rosidl_typesupport_introspection_c__visibility_control.h
+
+rosidl_typesupport_introspection_c/message_info/msg/detail/slave__rosidl_typesupport_introspection_c.h
 rosidl_runtime_c/message_type_support_struct.h
 rosidl_typesupport_introspection_c/message_info/msg/detail/rosidl_runtime_c/message_type_support_struct.h
 rosidl_typesupport_interface/macros.h

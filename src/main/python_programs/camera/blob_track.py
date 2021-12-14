@@ -1,20 +1,29 @@
+
 #!/usr/bin/env python3
 # coding: UTF-8
-
+import main
 import cv2
 import numpy as np
 import math
-
-class Camera:
+import time
+class Camera(RealSender):
     def __init__(self):
-        self.LOW_COLOR = np.array([0, 68, 176])
-        self.HIGH_COLOR = np.array([179, 255, 255])
+        super().__init__()
+        self.LOW_COLOR = np.array([0, 172, 122])
+        self.HIGH_COLOR = np.array([96, 255, 255])
         self.wide = 0
         self.AREA_RATIO_THRESHOLD = 0.005
         self.appear = False
+        self.pos = []
         # webカメラを扱うオブジェクトを取得
         self.degree_ball_robot = 0.0
         self.cap = cv2.VideoCapture(0, cv2.CAP_V4L2)
+        self.cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc('H', '2', '6', '4'));
+
+    def get(self):
+        j=0
+        #while(True):
+        #   self.capture()
 
     def capture(self):
         if(self.cap.isOpened()):
@@ -24,32 +33,37 @@ class Camera:
                 print("cannot read image")
 
             # 位置を抽出
-            pos = self.find_specific_color(
+            self.pos = self.find_specific_color(
                 frame,
                 self.AREA_RATIO_THRESHOLD,
                 self.LOW_COLOR,
                 self.HIGH_COLOR
             )
             
-            if pos is not None:
+            if self.pos is not None:
                 # 抽出した座標に丸を描く
-                cv2.circle(frame,pos,10,(0,0,255),-1)
+                cv2.circle(frame,self.pos,10,(0,0,255),-1)
                 #print(pos[0])
-                self.degree_ball_robot = ((self.wide / 2) - pos[0]) / ((self.wide / 2) / 31.1)
+                self.degree_ball_robot = ((self.wide / 2) - self.pos[0]) / ((self.wide / 2) / 31.1)
                 #print(self.degree_ball_robot)
             else:
                 self.degree_ball_robot = 1000.0
+            print(self.appear)
             # 画面に表示する
             #cv2.imshow('frame',frame)
-
+          
             # キーボード入力待ち
+            #cv2.imshow('img_final', img_final)
+            #cv2.waitKey(0)
             key = cv2.waitKey(1) & 0xFF
+            #cv2.destroyAllWindows()
 
             # qが押された場合は終了する
             #if key == ord('q'):
             #    break
         
         else:
+            print("Sayounara")
             self.cap.release()
             cv2.destroyAllWindows()
 

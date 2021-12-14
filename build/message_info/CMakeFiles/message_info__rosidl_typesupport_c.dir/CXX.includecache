@@ -66,6 +66,26 @@ rosidl_typesupport_c/visibility_control.h
 rosidl_typesupport_interface/macros.h
 /home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_c/message_info/msg/rosidl_typesupport_interface/macros.h
 
+/home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_c/message_info/msg/slave__type_support.cpp
+cstddef
+/home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_c/message_info/msg/cstddef
+rosidl_runtime_c/message_type_support_struct.h
+/home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_c/message_info/msg/rosidl_runtime_c/message_type_support_struct.h
+message_info/msg/rosidl_typesupport_c__visibility_control.h
+/home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_c/message_info/msg/message_info/msg/rosidl_typesupport_c__visibility_control.h
+message_info/msg/detail/slave__struct.h
+/home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_c/message_info/msg/message_info/msg/detail/slave__struct.h
+rosidl_typesupport_c/identifier.h
+/home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_c/message_info/msg/rosidl_typesupport_c/identifier.h
+rosidl_typesupport_c/message_type_support_dispatch.h
+/home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_c/message_info/msg/rosidl_typesupport_c/message_type_support_dispatch.h
+rosidl_typesupport_c/type_support_map.h
+/home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_c/message_info/msg/rosidl_typesupport_c/type_support_map.h
+rosidl_typesupport_c/visibility_control.h
+/home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_c/message_info/msg/rosidl_typesupport_c/visibility_control.h
+rosidl_typesupport_interface/macros.h
+/home/ubuntu/ws/Libero/build/message_info/rosidl_typesupport_c/message_info/msg/rosidl_typesupport_interface/macros.h
+
 /opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.h
 stdbool.h
 -
@@ -153,6 +173,14 @@ std_msgs/msg/detail/header__struct.h
 rosidl_generator_c/message_info/msg/detail/std_msgs/msg/detail/header__struct.h
 message_info/msg/detail/robot_command__struct.h
 rosidl_generator_c/message_info/msg/detail/message_info/msg/detail/robot_command__struct.h
+
+rosidl_generator_c/message_info/msg/detail/slave__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
 
 rosidl_typesupport_c/message_info/msg/rosidl_typesupport_c__visibility_control.h
 

@@ -5,7 +5,8 @@
   "idl_tuples": [
     "/home/ubuntu/ws/Libero/build/message_info/rosidl_adapter/message_info:msg/RobotCommand.idl",
     "/home/ubuntu/ws/Libero/build/message_info/rosidl_adapter/message_info:msg/RobotCommands.idl",
-    "/home/ubuntu/ws/Libero/build/message_info/rosidl_adapter/message_info:msg/RealCommands.idl"
+    "/home/ubuntu/ws/Libero/build/message_info/rosidl_adapter/message_info:msg/RealCommands.idl",
+    "/home/ubuntu/ws/Libero/build/message_info/rosidl_adapter/message_info:msg/Slave.idl"
   ],
   "ros_interface_dependencies": [
     "builtin_interfaces:/opt/ros/foxy/share/builtin_interfaces/msg/Duration.idl",
@@ -115,6 +116,7 @@
     "/home/ubuntu/ws/Libero/build/message_info/rosidl_adapter/message_info/msg/RobotCommand.idl",
     "/home/ubuntu/ws/Libero/build/message_info/rosidl_adapter/message_info/msg/RobotCommands.idl",
     "/home/ubuntu/ws/Libero/build/message_info/rosidl_adapter/message_info/msg/RealCommands.idl",
+    "/home/ubuntu/ws/Libero/build/message_info/rosidl_adapter/message_info/msg/Slave.idl",
     "/opt/ros/foxy/share/builtin_interfaces/msg/Duration.idl",
     "/opt/ros/foxy/share/builtin_interfaces/msg/Time.idl",
     "/opt/ros/foxy/share/std_msgs/msg/Bool.idl",

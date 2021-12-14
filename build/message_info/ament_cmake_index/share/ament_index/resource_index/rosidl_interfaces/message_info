@@ -4,3 +4,5 @@ msg/RobotCommand.idl
 msg/RobotCommand.msg
 msg/RobotCommands.idl
 msg/RobotCommands.msg
+msg/Slave.idl
+msg/Slave.msg

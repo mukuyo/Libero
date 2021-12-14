@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_c/message_info/msg/detail/real_commands__functions.c" "/home/ubuntu/ws/Libero/build/message_info/CMakeFiles/message_info__rosidl_generator_c.dir/rosidl_generator_c/message_info/msg/detail/real_commands__functions.c.o"
   "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_c/message_info/msg/detail/robot_command__functions.c" "/home/ubuntu/ws/Libero/build/message_info/CMakeFiles/message_info__rosidl_generator_c.dir/rosidl_generator_c/message_info/msg/detail/robot_command__functions.c.o"
   "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_c/message_info/msg/detail/robot_commands__functions.c" "/home/ubuntu/ws/Libero/build/message_info/CMakeFiles/message_info__rosidl_generator_c.dir/rosidl_generator_c/message_info/msg/detail/robot_commands__functions.c.o"
+  "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_c/message_info/msg/detail/slave__functions.c" "/home/ubuntu/ws/Libero/build/message_info/CMakeFiles/message_info__rosidl_generator_c.dir/rosidl_generator_c/message_info/msg/detail/slave__functions.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -37,8 +38,13 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_c/message_info/msg/detail/robot_commands__functions.h" "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_c/message_info/msg/robot_command.h"
   "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_c/message_info/msg/detail/robot_commands__struct.h" "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_c/message_info/msg/robot_command.h"
   "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_c/message_info/msg/detail/robot_commands__type_support.h" "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_c/message_info/msg/robot_command.h"
+  "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_c/message_info/msg/detail/slave__functions.c" "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_c/message_info/msg/robot_command.h"
+  "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_c/message_info/msg/detail/slave__functions.h" "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_c/message_info/msg/robot_command.h"
+  "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_c/message_info/msg/detail/slave__struct.h" "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_c/message_info/msg/robot_command.h"
+  "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_c/message_info/msg/detail/slave__type_support.h" "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_c/message_info/msg/robot_command.h"
   "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_c/message_info/msg/real_commands.h" "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_c/message_info/msg/robot_command.h"
   "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_c/message_info/msg/robot_commands.h" "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_c/message_info/msg/robot_command.h"
+  "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_c/message_info/msg/slave.h" "/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_c/message_info/msg/robot_command.h"
   )
 
 

@@ -46,6 +46,18 @@ std_msgs/msg/detail/header__functions.h
 message_info/msg/detail/robot_command__functions.h
 /home/ubuntu/ws/Libero/build/message_info/rosidl_generator_c/message_info/msg/detail/message_info/msg/detail/robot_command__functions.h
 
+/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_c/message_info/msg/detail/slave__functions.c
+message_info/msg/detail/slave__functions.h
+/home/ubuntu/ws/Libero/build/message_info/rosidl_generator_c/message_info/msg/detail/message_info/msg/detail/slave__functions.h
+assert.h
+-
+stdbool.h
+-
+stdlib.h
+-
+string.h
+-
+
 /opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.h
 stdbool.h
 -
@@ -159,6 +171,26 @@ std_msgs/msg/detail/header__struct.h
 rosidl_generator_c/message_info/msg/detail/std_msgs/msg/detail/header__struct.h
 message_info/msg/detail/robot_command__struct.h
 rosidl_generator_c/message_info/msg/detail/message_info/msg/detail/robot_command__struct.h
+
+rosidl_generator_c/message_info/msg/detail/slave__functions.h
+stdbool.h
+-
+stdlib.h
+-
+rosidl_runtime_c/visibility_control.h
+rosidl_generator_c/message_info/msg/detail/rosidl_runtime_c/visibility_control.h
+message_info/msg/rosidl_generator_c__visibility_control.h
+rosidl_generator_c/message_info/msg/detail/message_info/msg/rosidl_generator_c__visibility_control.h
+message_info/msg/detail/slave__struct.h
+rosidl_generator_c/message_info/msg/detail/message_info/msg/detail/slave__struct.h
+
+rosidl_generator_c/message_info/msg/detail/slave__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
 
 rosidl_generator_c/message_info/msg/rosidl_generator_c__visibility_control.h
 
