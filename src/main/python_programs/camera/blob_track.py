@@ -21,9 +21,8 @@ class Camera(RealSender):
         self.cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc('H', '2', '6', '4'));
 
     def get(self):
-        j=0
-        #while(True):
-        #   self.capture()
+        while(True):
+           self.capture()
 
     def capture(self):
         if(self.cap.isOpened()):
@@ -43,9 +42,7 @@ class Camera(RealSender):
             if self.pos is not None:
                 # 抽出した座標に丸を描く
                 cv2.circle(frame,self.pos,10,(0,0,255),-1)
-                #print(pos[0])
                 self.degree_ball_robot = ((self.wide / 2) - self.pos[0]) / ((self.wide / 2) / 31.1)
-                #print(self.degree_ball_robot)
             else:
                 self.degree_ball_robot = 1000.0
             print(self.appear)
@@ -63,7 +60,6 @@ class Camera(RealSender):
             #    break
         
         else:
-            print("Sayounara")
             self.cap.release()
             cv2.destroyAllWindows()
 
@@ -72,8 +68,7 @@ class Camera(RealSender):
         # 高さ，幅，チャンネル数
         h,w,c = frame.shape
         self.wide = w
-        #print(h)
-        # h = 480, w =  640find_specific_color
+        # h = 480, w =  640 find_specific_color
         # hsv色空間に変換
         hsv = cv2.cvtColor(frame,cv2.COLOR_BGR2HSV)
     
@@ -88,7 +83,6 @@ class Camera(RealSender):
 
         if len(areas) == 0 or np.max(areas) / (h*w) < AREA_RATIO_THRESHOLD:
             # 見つからなかったらNoneを返す
-            #print("the area is too small")
             self.appear = False
             return None
         else:
