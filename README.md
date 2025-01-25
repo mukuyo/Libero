@@ -19,3 +19,5 @@ To set up and run Libero, ensure the following software and libraries are instal
 
 Curious about Libero in action? Watch the movement demo here:  
 [![Movement Demo](https://img.youtube.com/vi/abIqz8p-8gs/0.jpg)](https://youtu.be/abIqz8p-8gs?si=SmeqRZ3N1gyWuHwJ)  
+
+Click the image or [this link](https://youtu.be/abIqz8p-8gs?si=SmeqRZ3N1gyWuHwJ) to view.  
